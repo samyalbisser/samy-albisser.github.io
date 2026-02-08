@@ -1,0 +1,3474 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio BTS SIO SISR de Samy ALBISSER — Alternant Technicien Poste de Travail à la CARSAT Alsace-Moselle. Ateliers professionnels, compétences E5, veille technologique et projet professionnel."
+    />
+    <meta name="author" content="Samy ALBISSER" />
+    <meta
+      name="keywords"
+      content="BTS SIO, SISR, Portfolio, Samy ALBISSER, CARSAT, Technicien, Systèmes, Réseaux, E5"
+    />
+    <meta
+      property="og:title"
+      content="Portfolio BTS SIO SISR — Samy ALBISSER"
+    />
+    <meta
+      property="og:description"
+      content="Alternant Technicien Poste de Travail à la CARSAT Alsace-Moselle. Découvrez mes ateliers professionnels, compétences et réalisations."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>"
+    />
+    <title>Portfolio - Samy ALBISSER | BTS SIO SISR</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ===== SIDE NAV DOTS (Desktop) ===== -->
+    <nav class="side-nav-dots" id="sideNav" aria-label="Navigation rapide">
+      <a href="#hero" class="side-dot active" data-tooltip="Accueil"
+        ><span></span
+      ></a>
+      <a href="#about" class="side-dot" data-tooltip="À propos"
+        ><span></span
+      ></a>
+      <a href="#formation" class="side-dot" data-tooltip="Formation"
+        ><span></span
+      ></a>
+      <a href="#experience" class="side-dot" data-tooltip="Expérience"
+        ><span></span
+      ></a>
+      <a href="#competences" class="side-dot" data-tooltip="Compétences"
+        ><span></span
+      ></a>
+      <a href="#projets" class="side-dot" data-tooltip="Ateliers Pro"
+        ><span></span
+      ></a>
+      <a href="#procedures" class="side-dot" data-tooltip="CARSAT"
+        ><span></span
+      ></a>
+      <a href="#epreuve-e5" class="side-dot" data-tooltip="Épreuve E5"
+        ><span></span
+      ></a>
+      <a href="#veille" class="side-dot" data-tooltip="Veille"><span></span></a>
+      <a href="#contact" class="side-dot" data-tooltip="Contact"
+        ><span></span
+      ></a>
+    </nav>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav id="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>SA<span class="logo-bracket"
+            >/&gt;</span
+          >
+        </a>
+        <ul class="nav-links">
+          <li><a href="#about" data-section="about">À propos</a></li>
+          <li><a href="#formation" data-section="formation">Formation</a></li>
+          <li>
+            <a href="#certifications" data-section="certifications"
+              >Certifications</a
+            >
+          </li>
+          <li>
+            <a href="#experience" data-section="experience">Expérience</a>
+          </li>
+          <li>
+            <a href="#competences" data-section="competences">Compétences</a>
+          </li>
+          <li><a href="#projets" data-section="projets">Ateliers Pro</a></li>
+          <li>
+            <a href="#procedures" data-section="procedures"
+              >Réalisations CARSAT</a
+            >
+          </li>
+          <li>
+            <a href="#epreuve-e5" data-section="epreuve-e5">Épreuve E5</a>
+          </li>
+          <li><a href="#veille" data-section="veille">Veille</a></li>
+          <li>
+            <a href="#projet-pro" data-section="projet-pro">Projet Pro</a>
+          </li>
+          <li><a href="#contact" data-section="contact">Contact</a></li>
+        </ul>
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Basculer le thème clair/sombre"
+          title="Changer de thème"
+        >
+          <i class="fas fa-sun" id="themeIcon"></i>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section id="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-content">
+        <div class="hero-badge">
+          🎓 BTS SIO option SISR — Promotion 2024-2026
+        </div>
+        <div class="hero-availability">
+          <span class="availability-dot"></span> Disponible en alternance —
+          Sept. 2026
+        </div>
+        <h1>
+          <span class="hero-greeting">Bonjour, je suis</span>
+          <span class="hero-name">Samy ALBISSER</span>
+          <span class="hero-title" id="typedText"></span>
+        </h1>
+        <p class="hero-description">
+          Alternant <strong>Technicien Poste de Travail</strong> à la
+          <strong>CARSAT Alsace-Moselle</strong>. Passionné par
+          l'infrastructure, le support et les systèmes & réseaux. En recherche
+          d'alternance <strong>Bac+3</strong> pour septembre 2026.
+        </p>
+        <div class="hero-cta">
+          <a href="#projets" class="btn btn-primary"
+            ><i class="fas fa-rocket"></i> Découvrir mes projets</a
+          >
+          <button class="btn btn-outline" id="openCvModal">
+            <i class="fas fa-file-pdf"></i> Voir mon CV
+          </button>
+          <a href="#contact" class="btn btn-outline"
+            ><i class="fas fa-envelope"></i> Me contacter</a
+          >
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-value"
+              ><span class="stat-number" data-target="100">0</span
+              ><span class="stat-plus">+</span></span
+            >
+            <span class="stat-label">Postes déployés</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-target="54">0</span>
+            <span class="stat-label">Smartphones remplacés</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-target="19">0</span>
+            <span class="stat-label">Procédures rédigées</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-target="17">0</span>
+            <span class="stat-label">Utilisateurs formés</span>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ==================== TECH STACK ==================== -->
+    <div class="tech-stack-bar">
+      <div class="tech-stack-inner">
+        <div class="tech-item" title="Windows 10/11 & Server 2022">
+          <i class="fab fa-windows"></i><span>Windows</span>
+        </div>
+        <div class="tech-item" title="Debian, Linux Mint">
+          <i class="fab fa-linux"></i><span>Linux</span>
+        </div>
+        <div class="tech-item" title="Annuaire, GPO, Sites AD">
+          <i class="fas fa-sitemap"></i><span>Active Directory</span>
+        </div>
+        <div class="tech-item" title="Firewall, VPN IPsec, DMZ">
+          <i class="fas fa-shield-alt"></i><span>pfSense</span>
+        </div>
+        <div class="tech-item" title="IPsec IKEv2, Road Warrior">
+          <i class="fas fa-lock"></i><span>VPN / IPsec</span>
+        </div>
+        <div class="tech-item" title="TCP/IP, DNS, DHCP, VLAN">
+          <i class="fas fa-network-wired"></i><span>Réseaux</span>
+        </div>
+        <div class="tech-item" title="Ivanti, MDT, WDS, PXE">
+          <i class="fas fa-download"></i><span>PXE / Ivanti</span>
+        </div>
+        <div class="tech-item" title="Gestion de parc & ticketing">
+          <i class="fas fa-tools"></i><span>GLPI</span>
+        </div>
+        <div class="tech-item" title="Scripts d'automatisation">
+          <i class="fas fa-terminal"></i><span>PowerShell</span>
+        </div>
+        <div class="tech-item" title="BitLocker, GPO, ANSSI">
+          <i class="fas fa-user-shield"></i><span>Cybersécurité</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== À PROPOS ==================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-number">01.</span> À propos de moi
+        </h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Actuellement en
+              <strong>BTS Services Informatiques aux Organisations</strong>
+              option <strong>SISR</strong> (Solutions d'Infrastructure, Systèmes
+              et Réseaux) au sein d'<strong>ECP Apprentissage</strong>,
+              j'effectue mon alternance à la
+              <strong>CARSAT Alsace-Moselle</strong> en tant que
+              <strong>Technicien poste de travail</strong> depuis septembre
+              2024.
+            </p>
+            <p>
+              Mon parcours académique varié — du
+              <strong>Bac STI2D</strong> option SIN au
+              <strong>BUT Informatique</strong> en passant par une
+              <strong>Licence Mathématiques et Informatique</strong> — m'a
+              permis d'acquérir une vision transversale de l'informatique, que
+              je mets aujourd'hui au service de l'infrastructure et du support
+              utilisateurs.
+            </p>
+            <p>
+              Au quotidien, je gère la masterisation de postes, le déploiement
+              de matériels, le support technique, et j'ai rédigé plus de
+              <strong>15 procédures techniques</strong> pour documenter et
+              pérenniser les processus.
+            </p>
+          </div>
+          <div class="about-info">
+            <div class="info-card">
+              <h3><i class="fas fa-user"></i> Profil</h3>
+              <ul class="info-list">
+                <li><strong>Âge :</strong> 23 ans</li>
+                <li><strong>Localisation :</strong> Lingolsheim, France</li>
+                <li><strong>Permis :</strong> B (véhiculé)</li>
+                <li><strong>Langues :</strong> Français, Anglais (B2)</li>
+              </ul>
+            </div>
+            <div class="info-card">
+              <h3><i class="fas fa-award"></i> Certifications</h3>
+              <ul class="info-list certifications">
+                <li>
+                  <i class="fas fa-certificate"></i> Computer Hardware Basics
+                </li>
+                <li><i class="fas fa-certificate"></i> Linux Unhatched</li>
+                <li>
+                  <i class="fas fa-certificate"></i> MOOC SecNumacadémie (ANSSI)
+                </li>
+              </ul>
+            </div>
+            <div class="info-card">
+              <h3><i class="fas fa-heart"></i> Qualités</h3>
+              <div class="qualities-tags">
+                <span class="tag">Sens du service</span>
+                <span class="tag">Pédagogie</span>
+                <span class="tag">Rigueur</span>
+                <span class="tag">Autonomie</span>
+                <span class="tag">Priorisation</span>
+                <span class="tag">Esprit d'équipe</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FORMATION ==================== -->
+    <section id="formation" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-number">02.</span> Parcours de formation
+        </h2>
+        <div class="timeline">
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-marker current"></div>
+            <div class="timeline-content">
+              <div class="timeline-badge">En cours</div>
+              <span class="timeline-date">2024 — 2026</span>
+              <h3>BTS SIO — Option SISR</h3>
+              <p class="timeline-place">
+                <i class="fas fa-school"></i> ECP Apprentissage — Strasbourg
+              </p>
+              <p>
+                Solutions d'Infrastructure, Systèmes et Réseaux. Formation en
+                alternance à la CARSAT Alsace-Moselle.
+              </p>
+              <div class="timeline-tags">
+                <span>Windows Server</span><span>Active Directory</span
+                ><span>Réseaux</span><span>Cybersécurité</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2023 — 2024</span>
+              <h3>Licence Mathématiques et Informatique</h3>
+              <p class="timeline-place">
+                <i class="fas fa-university"></i> Université de Strasbourg
+              </p>
+              <p>
+                Approfondissement des bases théoriques en mathématiques et
+                informatique.
+              </p>
+              <div class="timeline-tags">
+                <span>Algorithmique</span><span>Mathématiques</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2021 — 2023</span>
+              <h3>BUT Informatique</h3>
+              <p class="timeline-place">
+                <i class="fas fa-university"></i> IUT Robert Schuman —
+                Strasbourg
+              </p>
+              <p>
+                Formation polyvalente en développement, bases de données,
+                réseaux et systèmes.
+              </p>
+              <div class="timeline-tags">
+                <span>Java</span><span>SQL</span><span>Python</span
+                ><span>Web</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2018 — 2021</span>
+              <h3>Bac STI2D — Option SIN</h3>
+              <p class="timeline-place">
+                <i class="fas fa-school"></i> Lycée Louis Marchal — Molsheim
+              </p>
+              <p>
+                Sciences et Technologies de l'Industrie et du Développement
+                Durable, spécialité Systèmes d'Information et Numérique.
+              </p>
+              <div class="timeline-tags">
+                <span>Électronique</span><span>Programmation</span
+                ><span>Systèmes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CERTIFICATIONS ==================== -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-number">03.</span> Certifications
+        </h2>
+        <p class="section-subtitle">
+          Certifications obtenues attestant de mes compétences techniques
+        </p>
+        <div class="certifications-grid">
+          <div class="cert-card fade-in">
+            <div class="cert-logo">
+              <img
+                src="https://images.credly.com/size/340x340/images/263a5423-d7bf-411a-9b4b-11023f0b39c1/image.png"
+                alt="Cisco Computer Hardware Basics"
+                loading="lazy"
+              />
+            </div>
+            <div class="cert-content">
+              <h3>Computer Hardware Basics</h3>
+              <p class="cert-issuer">
+                <i class="fas fa-building"></i> Cisco Networking Academy
+              </p>
+              <p class="cert-date"><i class="fas fa-calendar-alt"></i> 2025</p>
+              <p class="cert-description">
+                Fondamentaux du matériel informatique : composants, assemblage,
+                dépannage, maintenance préventive des ordinateurs de bureau et
+                portables.
+              </p>
+              <div class="cert-tags">
+                <span>Hardware</span><span>Maintenance</span
+                ><span>Dépannage</span>
+              </div>
+            </div>
+            <a
+              href="https://www.credly.com/users/samy-albisser"
+              target="_blank"
+              class="cert-link"
+              title="Voir sur Credly"
+            >
+              <i class="fas fa-external-link-alt"></i> Vérifier
+            </a>
+          </div>
+
+          <div class="cert-card fade-in">
+            <div class="cert-logo">
+              <img
+                src="https://images.credly.com/size/340x340/images/c924d6a0-1672-4e32-879e-5c0ef4647d8a/image.png"
+                alt="Cisco Linux Unhatched"
+                loading="lazy"
+              />
+            </div>
+            <div class="cert-content">
+              <h3>Linux Unhatched</h3>
+              <p class="cert-issuer">
+                <i class="fas fa-building"></i> Cisco Networking Academy
+              </p>
+              <p class="cert-date"><i class="fas fa-calendar-alt"></i> 2025</p>
+              <p class="cert-description">
+                Introduction à Linux : commandes de base, gestion de fichiers,
+                utilisateurs, permissions et administration système élémentaire.
+              </p>
+              <div class="cert-tags">
+                <span>Linux</span><span>CLI</span><span>Administration</span>
+              </div>
+            </div>
+            <a
+              href="https://www.credly.com/users/samy-albisser"
+              target="_blank"
+              class="cert-link"
+              title="Voir sur Credly"
+            >
+              <i class="fas fa-external-link-alt"></i> Vérifier
+            </a>
+          </div>
+
+          <div class="cert-card fade-in">
+            <div class="cert-logo anssi-logo">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="cert-content">
+              <h3>MOOC SecNumacadémie</h3>
+              <p class="cert-issuer">
+                <i class="fas fa-building"></i> ANSSI — Agence Nationale de la
+                Sécurité des Systèmes d'Information
+              </p>
+              <p class="cert-date"><i class="fas fa-calendar-alt"></i> 2025</p>
+              <p class="cert-description">
+                Sensibilisation à la cybersécurité : hygiène numérique, menaces
+                courantes, bonnes pratiques de sécurité, RGPD et protection des
+                données.
+              </p>
+              <div class="cert-tags">
+                <span>Cybersécurité</span><span>RGPD</span
+                ><span>Bonnes pratiques</span>
+              </div>
+            </div>
+            <a
+              href="https://secnumacademie.gouv.fr/"
+              target="_blank"
+              class="cert-link"
+              title="Voir SecNumacadémie"
+            >
+              <i class="fas fa-external-link-alt"></i> En savoir plus
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPÉRIENCE ==================== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-number">04.</span> Expérience professionnelle
+        </h2>
+        <div class="experience-cards">
+          <!-- CARSAT -->
+          <div class="exp-card exp-card-main">
+            <div class="exp-header">
+              <div class="exp-company">
+                <h3>CARSAT Alsace-Moselle</h3>
+                <span class="exp-role"
+                  >Technicien Poste de Travail — Alternance</span
+                >
+              </div>
+              <div class="exp-meta">
+                <span class="exp-date"
+                  ><i class="fas fa-calendar"></i> Sept. 2024 — Juil. 2026</span
+                >
+                <span class="exp-location"
+                  ><i class="fas fa-map-marker-alt"></i> Strasbourg</span
+                >
+              </div>
+            </div>
+            <div class="exp-body">
+              <p class="exp-description">
+                La CARSAT (Caisse d'Assurance Retraite et de la Santé au
+                Travail) Alsace-Moselle est un organisme de sécurité sociale qui
+                assure la gestion de la retraite et la prévention des risques
+                professionnels. J'interviens au sein du
+                <strong>Service Infrastructure</strong>.
+              </p>
+              <div class="exp-missions">
+                <h4><i class="fas fa-tasks"></i> Missions principales</h4>
+                <div class="mission-grid">
+                  <div class="mission-item">
+                    <i class="fas fa-desktop"></i>
+                    <h5>Masterisation & Déploiement</h5>
+                    <p>
+                      Masterisation Windows 10/11 via Ivanti (PXE), déploiement
+                      de 100+ postes, renouvellement parc (~50-70 PC)
+                    </p>
+                  </div>
+                  <div class="mission-item">
+                    <i class="fas fa-headset"></i>
+                    <h5>Support Utilisateurs</h5>
+                    <p>
+                      Gestion des tickets via ISILOG, résolution d'incidents,
+                      assistance téléphonique et sur site
+                    </p>
+                  </div>
+                  <div class="mission-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h5>Déploiement Smartphones</h5>
+                    <p>
+                      Remplacement de 54 smartphones Samsung A16 sur 8 sites SSR
+                      (Colmar, Haguenau, Metz, Strasbourg...)
+                    </p>
+                  </div>
+                  <div class="mission-item">
+                    <i class="fas fa-users-cog"></i>
+                    <h5>Active Directory</h5>
+                    <p>
+                      Reset MDP, déverrouillage comptes, gestion OU et groupes
+                      de sécurité
+                    </p>
+                  </div>
+                  <div class="mission-item">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h5>Formation</h5>
+                    <p>
+                      Animation d'une formation Outlook pour 17 utilisateurs
+                    </p>
+                  </div>
+                  <div class="mission-item">
+                    <i class="fas fa-file-alt"></i>
+                    <h5>Documentation</h5>
+                    <p>
+                      Rédaction de 15 à 25 procédures et checklists techniques
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SFR -->
+          <div class="exp-card">
+            <div class="exp-header">
+              <div class="exp-company">
+                <h3>SFR Distribution</h3>
+                <span class="exp-role"
+                  >Conseiller de Vente — CDD Saisonnier</span
+                >
+              </div>
+              <div class="exp-meta">
+                <span class="exp-date"
+                  ><i class="fas fa-calendar"></i> Étés 2022, 2023, 2024</span
+                >
+              </div>
+            </div>
+            <div class="exp-body">
+              <p>
+                Accueil et conseil client, vente de forfaits et équipements,
+                gestion de la relation commerciale.
+              </p>
+            </div>
+          </div>
+
+          <!-- Stages -->
+          <div class="exp-card-group">
+            <div class="exp-card exp-card-small">
+              <h3>JKS Informatique</h3>
+              <span class="exp-role">Stage d'observation</span>
+              <span class="exp-date">Mai 2017</span>
+            </div>
+            <div class="exp-card exp-card-small">
+              <h3>Métallerie Hanssen</h3>
+              <span class="exp-role">Stage d'observation</span>
+              <span class="exp-date">Mai 2015</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== COMPÉTENCES ==================== -->
+    <section id="competences" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-number">05.</span> Compétences techniques
+        </h2>
+        <p class="section-subtitle">
+          Chaque compétence est rattachée à son contexte d'apprentissage —
+          ateliers professionnels, alternance ou formation
+        </p>
+
+        <!-- Légende des origines -->
+        <div class="skills-legend">
+          <span class="legend-item legend-ap1"
+            ><i class="fas fa-circle"></i> AP1 — GSB</span
+          >
+          <span class="legend-item legend-ap2"
+            ><i class="fas fa-circle"></i> AP2 — PARCUS</span
+          >
+          <span class="legend-item legend-ap3"
+            ><i class="fas fa-circle"></i> AP3 — ECP</span
+          >
+          <span class="legend-item legend-ap4"
+            ><i class="fas fa-circle"></i> AP4 — Sécu. Civile</span
+          >
+          <span class="legend-item legend-carsat"
+            ><i class="fas fa-circle"></i> CARSAT</span
+          >
+          <span class="legend-item legend-formation"
+            ><i class="fas fa-circle"></i> Formation</span
+          >
+        </div>
+
+        <div class="skills-grid">
+          <!-- SYSTÈMES -->
+          <div class="skill-category">
+            <div class="skill-icon"><i class="fab fa-windows"></i></div>
+            <h3>Systèmes</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Windows 10/11</span>
+                  <div class="skill-origins">
+                    <span
+                      class="skill-origin origin-ap1"
+                      title="GSB — Sécurisation poste Windows"
+                      >AP1</span
+                    >
+                    <span
+                      class="skill-origin origin-carsat"
+                      title="Masterisation & déploiement CARSAT"
+                      >CARSAT</span
+                    >
+                  </div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="90"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Windows Server 2022</span>
+                  <div class="skill-origins">
+                    <span
+                      class="skill-origin origin-ap2"
+                      title="AD, DNS, DHCP pour PARCUS"
+                      >AP2</span
+                    >
+                    <span
+                      class="skill-origin origin-ap3"
+                      title="4 DC multi-sites ECP"
+                      >AP3</span
+                    >
+                    <span
+                      class="skill-origin origin-ap4"
+                      title="Infra préfectorale"
+                      >AP4</span
+                    >
+                  </div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="80"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Active Directory / GPO</span>
+                  <div class="skill-origins">
+                    <span
+                      class="skill-origin origin-ap2"
+                      title="Domaine parcus.local, SSO"
+                      >AP2</span
+                    >
+                    <span
+                      class="skill-origin origin-ap3"
+                      title="4 DC, Sites AD, DHCP Failover"
+                      >AP3</span
+                    >
+                    <span class="skill-origin origin-ap4" title="AD préfecture"
+                      >AP4</span
+                    >
+                  </div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="80"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Linux (Debian / Mint)</span>
+                  <div class="skill-origins">
+                    <span
+                      class="skill-origin origin-ap1"
+                      title="Sécurisation Linux Mint, scripts Bash"
+                      >AP1</span
+                    >
+                    <span
+                      class="skill-origin origin-ap2"
+                      title="Serveurs Debian 12 (GLPI, Modoboa…)"
+                      >AP2</span
+                    >
+                    <span
+                      class="skill-origin origin-formation"
+                      title="Cours système Linux"
+                      >BTS</span
+                    >
+                  </div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="65"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RÉSEAUX -->
+          <div class="skill-category">
+            <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+            <h3>Réseaux</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>DNS / DHCP</span>
+                  <div class="skill-origins">
+                    <span
+                      class="skill-origin origin-ap2"
+                      title="DNS/DHCP parcus.local"
+                      >AP2</span
+                    >
+                    <span
+                      class="skill-origin origin-ap3"
+                      title="DNS multi-sites, DHCP Failover 50/50"
+                      >AP3</span
+                    >
+                  </div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="75"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>pfSense / VPN IPsec</span>
+                  <div class="skill-origins">
+                    <span
+                      class="skill-origin origin-ap2"
+                      title="Passerelle pfSense PARCUS"
+                      >AP2</span
+                    >
+                    <span
+                      class="skill-origin origin-ap3"
+                      title="VPN IPsec IKEv2 AES-256 site-to-site"
+                      >AP3</span
+                    >
+                    <span
+                      class="skill-origin origin-ap4"
+                      title="VPN Road Warrior, DMZ"
+                      >AP4</span
+                    >
+                  </div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="70"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>TCP/IP & adressage</span>
+                  <div class="skill-origins">
+                    <span
+                      class="skill-origin origin-ap2"
+                      title="Plan d'adressage 192.168.100.0/24"
+                      >AP2</span
+                    >
+                    <span
+                      class="skill-origin origin-ap3"
+                      title="Réseaux LAN, SAN, WAN multi-sites"
+                      >AP3</span
+                    >
+                    <span
+                      class="skill-origin origin-formation"
+                      title="Cours réseaux BTS SIO"
+                      >BTS</span
+                    >
+                  </div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="70"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Câblage & brassage</span>
+                  <div class="skill-origins">
+                    <span
+                      class="skill-origin origin-carsat"
+                      title="Interventions terrain sur sites CARSAT"
+                      >CARSAT</span
+                    >
+                    <span
+                      class="skill-origin origin-formation"
+                      title="Ateliers réseau BTS"
+                      >BTS</span
+                    >
+                  </div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="80"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- OUTILS & LOGICIELS -->
+          <div class="skill-category">
+            <div class="skill-icon"><i class="fas fa-tools"></i></div>
+            <h3>Outils & Logiciels</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Ivanti / MDT / PXE</span>
+                  <div class="skill-origins">
+                    <span
+                      class="skill-origin origin-carsat"
+                      title="Masterisation de 100+ postes avec Ivanti"
+                      >CARSAT</span
+                    >
+                  </div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="85"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>GLPI / OCS Inventory</span>
+                  <div class="skill-origins">
+                    <span
+                      class="skill-origin origin-ap2"
+                      title="Déploiement GLPI + OCS pour gestion parc PARCUS"
+                      >AP2</span
+                    >
+                  </div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="70"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>ISILOG / Ticketing</span>
+                  <div class="skill-origins">
+                    <span
+                      class="skill-origin origin-carsat"
+                      title="Gestion des incidents & demandes CARSAT"
+                      >CARSAT</span
+                    >
+                  </div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="85"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>FOG / opsi / WDS</span>
+                  <div class="skill-origins">
+                    <span
+                      class="skill-origin origin-ap2"
+                      title="Clonage PXE (FOG), déploiement logiciels (opsi)"
+                      >AP2</span
+                    >
+                    <span
+                      class="skill-origin origin-ap1"
+                      title="Rescuezilla imaging"
+                      >AP1</span
+                    >
+                  </div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="65"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SÉCURITÉ -->
+          <div class="skill-category">
+            <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3>Sécurité</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>BitLocker / chiffrement</span>
+                  <div class="skill-origins">
+                    <span
+                      class="skill-origin origin-ap1"
+                      title="Chiffrement disque poste nomade Windows"
+                      >AP1</span
+                    >
+                    <span
+                      class="skill-origin origin-carsat"
+                      title="Politique BitLocker CARSAT"
+                      >CARSAT</span
+                    >
+                  </div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="75"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>GPO / durcissement</span>
+                  <div class="skill-origins">
+                    <span
+                      class="skill-origin origin-ap3"
+                      title="GPO sécurité : MDP 12 car., blocage CMD/USB"
+                      >AP3</span
+                    >
+                    <span
+                      class="skill-origin origin-ap4"
+                      title="Conformité ANSSI"
+                      >AP4</span
+                    >
+                  </div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="65"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>UFW / Fail2Ban / iptables</span>
+                  <div class="skill-origins">
+                    <span
+                      class="skill-origin origin-ap1"
+                      title="Pare-feu & anti-brute force Linux Mint"
+                      >AP1</span
+                    >
+                  </div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="60"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Effacement sécurisé (NIST)</span>
+                  <div class="skill-origins">
+                    <span
+                      class="skill-origin origin-carsat"
+                      title="Procédure d'effacement NIST 800-88 avant recyclage"
+                      >CARSAT</span
+                    >
+                  </div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="70"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- STOCKAGE & HAUTE DISPO -->
+          <div class="skill-category">
+            <div class="skill-icon"><i class="fas fa-database"></i></div>
+            <h3>Stockage & Haute Dispo</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>TrueNAS / iSCSI / ZFS</span>
+                  <div class="skill-origins">
+                    <span
+                      class="skill-origin origin-ap3"
+                      title="2× TrueNAS Core, réseau SAN dédié iSCSI"
+                      >AP3</span
+                    >
+                  </div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="60"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>DFS / DFSR</span>
+                  <div class="skill-origins">
+                    <span
+                      class="skill-origin origin-ap3"
+                      title="DFS namespace + réplication DFSR maille pleine"
+                      >AP3</span
+                    >
+                  </div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="60"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Sauvegarde & restauration</span>
+                  <div class="skill-origins">
+                    <span
+                      class="skill-origin origin-ap1"
+                      title="Rescuezilla — clonage & restauration images"
+                      >AP1</span
+                    >
+                    <span
+                      class="skill-origin origin-ap3"
+                      title="Windows Server Backup, clichés instantanés"
+                      >AP3</span
+                    >
+                  </div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="65"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>RustDesk / assistance</span>
+                  <div class="skill-origins">
+                    <span
+                      class="skill-origin origin-ap2"
+                      title="Serveur RustDesk auto-hébergé RGPD"
+                      >AP2</span
+                    >
+                    <span
+                      class="skill-origin origin-carsat"
+                      title="Support à distance Citrix/Jabber"
+                      >CARSAT</span
+                    >
+                  </div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="70"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SCRIPTING & DEV -->
+          <div class="skill-category">
+            <div class="skill-icon"><i class="fas fa-code"></i></div>
+            <h3>Scripting & Dev</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>PowerShell</span>
+                  <div class="skill-origins">
+                    <span
+                      class="skill-origin origin-ap1"
+                      title="Scripts d'automatisation sécurité Windows"
+                      >AP1</span
+                    >
+                    <span
+                      class="skill-origin origin-carsat"
+                      title="Scripts de déploiement CARSAT"
+                      >CARSAT</span
+                    >
+                  </div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="65"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Bash</span>
+                  <div class="skill-origins">
+                    <span
+                      class="skill-origin origin-ap1"
+                      title="Scripts d'automatisation sécurité Linux"
+                      >AP1</span
+                    >
+                    <span
+                      class="skill-origin origin-formation"
+                      title="Cours Linux BTS SIO"
+                      >BTS</span
+                    >
+                  </div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="55"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>HTML / CSS / JS</span>
+                  <div class="skill-origins">
+                    <span
+                      class="skill-origin origin-formation"
+                      title="Cours développement web BTS SIO"
+                      >BTS</span
+                    >
+                  </div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="60"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Python / SQL</span>
+                  <div class="skill-origins">
+                    <span
+                      class="skill-origin origin-formation"
+                      title="Cours programmation BTS SIO"
+                      >BTS</span
+                    >
+                  </div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="55"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJETS BTS / ATELIERS PROFESSIONNELS ==================== -->
+    <section id="projets" class="section">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-number">06.</span> Ateliers Professionnels — BTS
+          SIO
+        </h2>
+        <p class="section-subtitle">
+          Projets réalisés en centre de formation — là où j'ai acquis le plus de
+          compétences techniques SISR
+        </p>
+
+        <!-- AP1 -->
+        <div class="ap-card" data-ap="1">
+          <div
+            class="ap-header"
+            role="button"
+            tabindex="0"
+            aria-expanded="false"
+            onclick="toggleAP(this)"
+            onkeydown="
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                toggleAP(this);
+              }
+            "
+          >
+            <div class="ap-header-left">
+              <span class="ap-number">AP1</span>
+              <div>
+                <h3>GSB — Sécurisation de postes nomades</h3>
+                <p class="ap-context">
+                  Galaxy Swiss Bourdin — Laboratoire pharmaceutique
+                </p>
+              </div>
+            </div>
+            <div class="ap-header-right">
+              <span class="ap-status ap-done"
+                ><i class="fas fa-check-circle"></i> Terminé</span
+              >
+              <i class="fas fa-chevron-down ap-toggle"></i>
+            </div>
+          </div>
+          <div class="ap-body">
+            <div class="ap-overview">
+              <div class="ap-desc">
+                <h4><i class="fas fa-crosshairs"></i> Contexte & Objectifs</h4>
+                <p>
+                  Le laboratoire pharmaceutique <strong>GSB</strong> souhaite
+                  fournir à ses visiteurs médicaux des
+                  <strong>postes nomades sécurisés</strong> (Windows 10 & Linux
+                  Mint) pour protéger les données sensibles (brevets, données
+                  médicales) lors de déplacements. Le projet couvre la
+                  <strong>sécurisation complète</strong> des deux OS, le
+                  <strong>déploiement automatisé</strong> et la
+                  <strong>sauvegarde/restauration</strong> d'images disque.
+                </p>
+                <p><strong>Groupe :</strong> Samy ALBISSER & Arman ABGARYAN</p>
+              </div>
+              <div class="ap-infos">
+                <div class="ap-info-item">
+                  <i class="fas fa-clock"></i>
+                  <span
+                    ><strong>Durée :</strong> ~150h (75h Linux + 75h
+                    Windows)</span
+                  >
+                </div>
+                <div class="ap-info-item">
+                  <i class="fas fa-users"></i>
+                  <span
+                    ><strong>Binôme :</strong> Chef de projet & Technicien</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-tech-section">
+              <h4><i class="fas fa-cogs"></i> Réalisations techniques</h4>
+              <div class="ap-realisation-grid">
+                <div class="ap-realisation">
+                  <div class="ap-real-icon"><i class="fab fa-linux"></i></div>
+                  <h5>Sécurisation Linux Mint</h5>
+                  <ul>
+                    <li>ClamAV (antivirus)</li>
+                    <li>Fail2Ban (anti-brute force)</li>
+                    <li>UFW & iptables (pare-feu)</li>
+                    <li>Hardening SSH</li>
+                    <li>Scripts d'automatisation Bash</li>
+                  </ul>
+                </div>
+                <div class="ap-realisation">
+                  <div class="ap-real-icon"><i class="fab fa-windows"></i></div>
+                  <h5>Sécurisation Windows 10</h5>
+                  <ul>
+                    <li>BitLocker (chiffrement disque)</li>
+                    <li>Windows Defender (antivirus)</li>
+                    <li>Pare-feu avancé Windows</li>
+                    <li>Scripts PowerShell</li>
+                    <li>GPO locales de sécurité</li>
+                  </ul>
+                </div>
+                <div class="ap-realisation">
+                  <div class="ap-real-icon"><i class="fas fa-save"></i></div>
+                  <h5>Déploiement & Sauvegarde</h5>
+                  <ul>
+                    <li>Rescuezilla (clonage d'images)</li>
+                    <li>Masterisation & restauration</li>
+                    <li>Documentation 388 pages</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="ap-results">
+              <h4><i class="fas fa-trophy"></i> Résultats & Impact</h4>
+              <div class="ap-results-grid">
+                <div class="ap-result">
+                  <span class="result-value">388</span
+                  ><span class="result-label">pages de documentation</span>
+                </div>
+                <div class="ap-result">
+                  <span class="result-value">2</span
+                  ><span class="result-label">OS entièrement sécurisés</span>
+                </div>
+                <div class="ap-result">
+                  <span class="result-value">100%</span
+                  ><span class="result-label">automatisé (Bash & PS)</span>
+                </div>
+              </div>
+            </div>
+            <div class="ap-tech-tags">
+              <span>BitLocker</span><span>UFW</span><span>Fail2Ban</span
+              ><span>ClamAV</span> <span>iptables</span><span>SSH</span
+              ><span>PowerShell</span><span>Bash</span> <span>Rescuezilla</span
+              ><span>Linux Mint</span><span>Windows 10</span>
+            </div>
+            <div class="ap-competences-bar">
+              <span
+                ><i class="fas fa-check"></i> Sécuriser les équipements</span
+              >
+              <span
+                ><i class="fas fa-check"></i> Garantir la confidentialité</span
+              >
+              <span><i class="fas fa-check"></i> Protéger les données</span>
+            </div>
+            <div class="ap-competences-e5">
+              <h4>
+                <i class="fas fa-graduation-cap"></i> Compétences E5 mobilisées
+              </h4>
+              <div class="e5-badges">
+                <span class="e5-badge"
+                  ><span class="e5-code">C1</span> Gérer le patrimoine
+                  informatique</span
+                >
+                <span class="e5-badge"
+                  ><span class="e5-code">C2</span> Répondre aux incidents et
+                  demandes</span
+                >
+                <span class="e5-badge"
+                  ><span class="e5-code">C4</span> Travailler en mode
+                  projet</span
+                >
+                <span class="e5-badge"
+                  ><span class="e5-code">C5</span> Mettre à disposition un
+                  service</span
+                >
+                <span class="e5-badge"
+                  ><span class="e5-code">C6</span> Organiser son développement
+                  professionnel</span
+                >
+              </div>
+            </div>
+            <div class="ap-livrables">
+              <h4>
+                <i class="fas fa-file-download"></i> Livrables & Documents
+              </h4>
+              <div class="ap-livrables-grid">
+                <a
+                  href="assets/Ateliers Professionels BTS SIO/AP1/Sujet AP1.pdf"
+                  target="_blank"
+                  class="ap-livrable-btn"
+                >
+                  <i class="fas fa-file-pdf"></i> Sujet AP1
+                </a>
+                <a
+                  href="assets/Ateliers Professionels BTS SIO/AP1/Livrable 1 AP1.pdf"
+                  target="_blank"
+                  class="ap-livrable-btn"
+                >
+                  <i class="fas fa-file-pdf"></i> Livrable 1 — Rapport
+                </a>
+                <a
+                  href="assets/Ateliers Professionels BTS SIO/AP1/Livrable 3 AP1.pdf"
+                  target="_blank"
+                  class="ap-livrable-btn"
+                >
+                  <i class="fas fa-file-pdf"></i> Livrable 3 — Documentation
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AP2 -->
+        <div class="ap-card" data-ap="2">
+          <div
+            class="ap-header"
+            role="button"
+            tabindex="0"
+            aria-expanded="false"
+            onclick="toggleAP(this)"
+            onkeydown="
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                toggleAP(this);
+              }
+            "
+          >
+            <div class="ap-header-left">
+              <span class="ap-number">AP2</span>
+              <div>
+                <h3>PARCUS — Création d'une DSI interne</h3>
+                <p class="ap-context">
+                  PARCUS — Gestion de parkings & services urbains (83
+                  utilisateurs)
+                </p>
+              </div>
+            </div>
+            <div class="ap-header-right">
+              <span class="ap-status ap-done"
+                ><i class="fas fa-check-circle"></i> Terminé</span
+              >
+              <i class="fas fa-chevron-down ap-toggle"></i>
+            </div>
+          </div>
+          <div class="ap-body">
+            <div class="ap-overview">
+              <div class="ap-desc">
+                <h4><i class="fas fa-crosshairs"></i> Contexte & Objectifs</h4>
+                <p>
+                  La société <strong>PARCUS</strong> (83 utilisateurs) décide
+                  d'<strong>internaliser son SI</strong> en créant une DSI
+                  complète. En tant que prestataire (société fictive
+                  <strong>Altinux</strong>), nous devons concevoir et déployer
+                  l'infrastructure complète : annuaire, gestion de parc,
+                  ticketing, messagerie, assistance à distance et déploiement —
+                  le tout en
+                  <strong>auto-hébergé, open-source et conforme RGPD</strong>.
+                </p>
+                <p>
+                  <strong>Groupe :</strong> Samy ALBISSER (Chef de projet) &
+                  Emre ALBAYRAK
+                </p>
+              </div>
+              <div class="ap-infos">
+                <div class="ap-info-item">
+                  <i class="fas fa-clock"></i>
+                  <span
+                    ><strong>Durée :</strong> 10 semaines (fév. – juin
+                    2025)</span
+                  >
+                </div>
+                <div class="ap-info-item">
+                  <i class="fas fa-euro-sign"></i>
+                  <span><strong>Budget :</strong> 18 127,46 € TTC</span>
+                </div>
+                <div class="ap-info-item">
+                  <i class="fas fa-server"></i>
+                  <span
+                    ><strong>Infra :</strong> 7 machines —
+                    192.168.100.0/24</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-tech-section">
+              <h4>
+                <i class="fas fa-cogs"></i> Architecture & Services déployés
+              </h4>
+              <div class="ap-services-grid">
+                <div class="ap-service">
+                  <span class="ap-service-icon"
+                    ><i class="fas fa-sitemap"></i
+                  ></span>
+                  <strong>Active Directory</strong>
+                  <small>SSO, GPO, parcus.local</small>
+                </div>
+                <div class="ap-service">
+                  <span class="ap-service-icon"
+                    ><i class="fas fa-box-open"></i
+                  ></span>
+                  <strong>GLPI + OCS</strong>
+                  <small>Gestion de parc & inventaire</small>
+                </div>
+                <div class="ap-service">
+                  <span class="ap-service-icon"
+                    ><i class="fas fa-download"></i
+                  ></span>
+                  <strong>opsi</strong>
+                  <small>Déploiement logiciels</small>
+                </div>
+                <div class="ap-service">
+                  <span class="ap-service-icon"
+                    ><i class="fas fa-desktop"></i
+                  ></span>
+                  <strong>RustDesk</strong>
+                  <small>Assistance RGPD</small>
+                </div>
+                <div class="ap-service">
+                  <span class="ap-service-icon"
+                    ><i class="fas fa-envelope"></i
+                  ></span>
+                  <strong>Modoboa</strong>
+                  <small>Messagerie auto-hébergée</small>
+                </div>
+                <div class="ap-service">
+                  <span class="ap-service-icon"
+                    ><i class="fas fa-clone"></i
+                  ></span>
+                  <strong>FOG Project</strong>
+                  <small>Clonage PXE réseau</small>
+                </div>
+                <div class="ap-service">
+                  <span class="ap-service-icon"
+                    ><i class="fas fa-hdd"></i
+                  ></span>
+                  <strong>WDS</strong>
+                  <small>Déploiement images Win11</small>
+                </div>
+                <div class="ap-service">
+                  <span class="ap-service-icon"
+                    ><i class="fas fa-shield-alt"></i
+                  ></span>
+                  <strong>pfSense</strong>
+                  <small>Passerelle / Pare-feu</small>
+                </div>
+              </div>
+            </div>
+            <div class="ap-results">
+              <h4><i class="fas fa-trophy"></i> Résultats & Impact</h4>
+              <div class="ap-results-grid">
+                <div class="ap-result">
+                  <span class="result-value">18 127 €</span
+                  ><span class="result-label">budget respecté</span>
+                </div>
+                <div class="ap-result">
+                  <span class="result-value">7</span
+                  ><span class="result-label">machines en production</span>
+                </div>
+                <div class="ap-result">
+                  <span class="result-value">8</span
+                  ><span class="result-label">services déployés</span>
+                </div>
+              </div>
+            </div>
+            <div class="ap-tech-tags">
+              <span>Active Directory</span><span>GLPI</span
+              ><span>OCS Inventory</span><span>opsi</span> <span>RustDesk</span
+              ><span>Modoboa</span><span>FOG Project</span><span>WDS/PXE</span>
+              <span>pfSense</span><span>DHCP</span><span>DNS</span
+              ><span>Debian 12</span> <span>Windows Server 2022</span
+              ><span>LAMP</span><span>MariaDB</span>
+            </div>
+            <div class="ap-competences-bar">
+              <span
+                ><i class="fas fa-check"></i> Gérer le patrimoine
+                informatique</span
+              >
+              <span><i class="fas fa-check"></i> Répondre aux incidents</span>
+              <span
+                ><i class="fas fa-check"></i> Administrer systèmes &
+                réseaux</span
+              >
+            </div>
+            <div class="ap-competences-e5">
+              <h4>
+                <i class="fas fa-graduation-cap"></i> Compétences E5 mobilisées
+              </h4>
+              <div class="e5-badges">
+                <span class="e5-badge"
+                  ><span class="e5-code">C1</span> Gérer le patrimoine
+                  informatique</span
+                >
+                <span class="e5-badge"
+                  ><span class="e5-code">C2</span> Répondre aux incidents et
+                  demandes</span
+                >
+                <span class="e5-badge"
+                  ><span class="e5-code">C4</span> Travailler en mode
+                  projet</span
+                >
+                <span class="e5-badge"
+                  ><span class="e5-code">C5</span> Mettre à disposition un
+                  service</span
+                >
+                <span class="e5-badge"
+                  ><span class="e5-code">C6</span> Organiser son développement
+                  professionnel</span
+                >
+              </div>
+            </div>
+            <div class="ap-livrables">
+              <h4>
+                <i class="fas fa-file-download"></i> Livrables & Documents
+              </h4>
+              <div class="ap-livrables-grid">
+                <a
+                  href="assets/Ateliers Professionels BTS SIO/AP2/Livrable 1 AP2.md"
+                  target="_blank"
+                  class="ap-livrable-btn"
+                >
+                  <i class="fas fa-file-alt"></i> Livrable 1 — Cahier des
+                  charges
+                </a>
+                <a
+                  href="assets/Ateliers Professionels BTS SIO/AP2/Livrable 2 AP2.md"
+                  target="_blank"
+                  class="ap-livrable-btn"
+                >
+                  <i class="fas fa-file-alt"></i> Livrable 2 — Documentation
+                  technique
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AP3 -->
+        <div class="ap-card" data-ap="3">
+          <div
+            class="ap-header"
+            role="button"
+            tabindex="0"
+            aria-expanded="false"
+            onclick="toggleAP(this)"
+            onkeydown="
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                toggleAP(this);
+              }
+            "
+          >
+            <div class="ap-header-left">
+              <span class="ap-number">AP3</span>
+              <div>
+                <h3>ECP — SI Hautement Disponible Multi-Sites</h3>
+                <p class="ap-context">
+                  ECP Apprentissage (Groupe GEFE) — 2 sites à Strasbourg
+                </p>
+              </div>
+            </div>
+            <div class="ap-header-right">
+              <span class="ap-status ap-done"
+                ><i class="fas fa-check-circle"></i> Terminé</span
+              >
+              <i class="fas fa-chevron-down ap-toggle"></i>
+            </div>
+          </div>
+          <div class="ap-body">
+            <div class="ap-overview">
+              <div class="ap-desc">
+                <h4><i class="fas fa-crosshairs"></i> Contexte & Objectifs</h4>
+                <p>
+                  L'<strong>ECP Apprentissage</strong> dispose de 2 sites
+                  (Vauban & Somme) et souhaite un SI
+                  <strong>indépendant, hautement disponible et sécurisé</strong>
+                  avec interconnexion inter-sites. Le projet est découpé en
+                  <strong>4 lots</strong> : Réseau/VPN, Active Directory,
+                  Stockage SAN/DFS, et GPO/Sécurisation — avec un objectif de
+                  <strong>résilience totale</strong>
+                  (bascule transparente en cas de panne).
+                </p>
+                <p>
+                  <strong>Groupe :</strong> Samy ALBISSER (Chef de projet, Site
+                  A) & Emre ALBAYRAK (Site B)
+                </p>
+              </div>
+              <div class="ap-infos">
+                <div class="ap-info-item">
+                  <i class="fas fa-clock"></i>
+                  <span
+                    ><strong>Durée :</strong> 10 semaines (sept. – déc.
+                    2025)</span
+                  >
+                </div>
+                <div class="ap-info-item">
+                  <i class="fas fa-euro-sign"></i>
+                  <span
+                    ><strong>Budget :</strong> 12 297,87 € TTC (12% du
+                    max)</span
+                  >
+                </div>
+                <div class="ap-info-item">
+                  <i class="fas fa-server"></i>
+                  <span
+                    ><strong>Infra :</strong> 8 machines — 2 sites — Domaine
+                    IEF.LOCAL</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-tech-section">
+              <h4><i class="fas fa-layer-group"></i> Les 4 Lots du projet</h4>
+              <div class="ap-lots-grid">
+                <div class="ap-lot">
+                  <div class="ap-lot-header">
+                    <span class="ap-lot-number">LOT 1</span>
+                    <h5>Réseau & VPN</h5>
+                  </div>
+                  <ul>
+                    <li>2× pfSense (WAN, LAN, SAN)</li>
+                    <li>VPN IPsec IKEv2 site-to-site</li>
+                    <li>AES-256, SHA256, DH Group 14</li>
+                    <li>23 règles firewall</li>
+                    <li>Conformité ANSSI</li>
+                  </ul>
+                </div>
+                <div class="ap-lot">
+                  <div class="ap-lot-header">
+                    <span class="ap-lot-number">LOT 2</span>
+                    <h5>Active Directory</h5>
+                  </div>
+                  <ul>
+                    <li>4 contrôleurs de domaine</li>
+                    <li>2 GUI + 2 Core (Win Server 2022)</li>
+                    <li>Sites AD : VAUBAN & SOMME</li>
+                    <li>DHCP Failover (50/50)</li>
+                    <li>DNS multi-sites</li>
+                  </ul>
+                </div>
+                <div class="ap-lot">
+                  <div class="ap-lot-header">
+                    <span class="ap-lot-number">LOT 3</span>
+                    <h5>Stockage SAN & DFS</h5>
+                  </div>
+                  <ul>
+                    <li>2× TrueNAS Core (ZFS)</li>
+                    <li>iSCSI réseau SAN dédié</li>
+                    <li>DFS + DFSR maille pleine</li>
+                    <li>Clichés instantanés</li>
+                    <li>Windows Server Backup</li>
+                  </ul>
+                </div>
+                <div class="ap-lot">
+                  <div class="ap-lot-header">
+                    <span class="ap-lot-number">LOT 4</span>
+                    <h5>GPO & Sécurisation</h5>
+                  </div>
+                  <ul>
+                    <li>MDP 12 car., verrouillage 3 tentatives</li>
+                    <li>Lecteurs réseaux, redirection dossiers</li>
+                    <li>Blocage CMD, PowerShell, USB</li>
+                    <li>Durcissement pfSense</li>
+                    <li>Tests de résilience validés</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="ap-results">
+              <h4><i class="fas fa-trophy"></i> Résultats & Impact</h4>
+              <div class="ap-results-grid">
+                <div class="ap-result">
+                  <span class="result-value">12%</span
+                  ><span class="result-label">du budget max utilisé</span>
+                </div>
+                <div class="ap-result">
+                  <span class="result-value">2 sites</span
+                  ><span class="result-label">interconnectés — bascule OK</span>
+                </div>
+                <div class="ap-result">
+                  <span class="result-value">23</span
+                  ><span class="result-label">règles firewall ANSSI</span>
+                </div>
+              </div>
+            </div>
+            <div class="ap-tech-tags">
+              <span>pfSense</span><span>VPN IPsec IKEv2</span
+              ><span>Active Directory</span> <span>4 DC</span
+              ><span>TrueNAS</span><span>ZFS</span><span>iSCSI</span>
+              <span>DFS/DFSR</span><span>GPO</span
+              ><span>Windows Server 2022</span> <span>DHCP Failover</span
+              ><span>AES-256</span><span>ANSSI</span>
+            </div>
+            <div class="ap-competences-bar">
+              <span
+                ><i class="fas fa-check"></i> Administrer systèmes &
+                réseaux</span
+              >
+              <span><i class="fas fa-check"></i> Assurer la cybersécurité</span>
+              <span
+                ><i class="fas fa-check"></i> Concevoir une infrastructure</span
+              >
+            </div>
+            <div class="ap-competences-e5">
+              <h4>
+                <i class="fas fa-graduation-cap"></i> Compétences E5 mobilisées
+              </h4>
+              <div class="e5-badges">
+                <span class="e5-badge"
+                  ><span class="e5-code">C1</span> Gérer le patrimoine
+                  informatique</span
+                >
+                <span class="e5-badge"
+                  ><span class="e5-code">C2</span> Répondre aux incidents et
+                  demandes</span
+                >
+                <span class="e5-badge"
+                  ><span class="e5-code">C4</span> Travailler en mode
+                  projet</span
+                >
+                <span class="e5-badge"
+                  ><span class="e5-code">C5</span> Mettre à disposition un
+                  service</span
+                >
+                <span class="e5-badge"
+                  ><span class="e5-code">C6</span> Organiser son développement
+                  professionnel</span
+                >
+              </div>
+            </div>
+            <div class="ap-livrables">
+              <h4>
+                <i class="fas fa-file-download"></i> Livrables & Documents
+              </h4>
+              <div class="ap-livrables-grid">
+                <a
+                  href="assets/Ateliers Professionels BTS SIO/AP3/Livrable 1 AP3.md"
+                  target="_blank"
+                  class="ap-livrable-btn"
+                >
+                  <i class="fas fa-file-alt"></i> Livrable 1 — Cahier des
+                  charges
+                </a>
+                <a
+                  href="assets/Ateliers Professionels BTS SIO/AP3/Livrable 2 AP3/Livrable 2 - LOT 1 - AP3.md"
+                  target="_blank"
+                  class="ap-livrable-btn"
+                >
+                  <i class="fas fa-file-alt"></i> Livrable 2 — LOT 1 Réseau &
+                  VPN
+                </a>
+                <a
+                  href="assets/Ateliers Professionels BTS SIO/AP3/Livrable 2 AP3/Livrable 2 - LOT 2 - AP3.md"
+                  target="_blank"
+                  class="ap-livrable-btn"
+                >
+                  <i class="fas fa-file-alt"></i> Livrable 2 — LOT 2 Active
+                  Directory
+                </a>
+                <a
+                  href="assets/Ateliers Professionels BTS SIO/AP3/Livrable 2 AP3/Livrable 2 - LOT 3 - AP3.md"
+                  target="_blank"
+                  class="ap-livrable-btn"
+                >
+                  <i class="fas fa-file-alt"></i> Livrable 2 — LOT 3 Stockage
+                  SAN
+                </a>
+                <a
+                  href="assets/Ateliers Professionels BTS SIO/AP3/Livrable 2 AP3/Livrable 2 - LOT 4 - AP3.md"
+                  target="_blank"
+                  class="ap-livrable-btn"
+                >
+                  <i class="fas fa-file-alt"></i> Livrable 2 — LOT 4 GPO & Sécu
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AP4 -->
+        <div class="ap-card" data-ap="4">
+          <div
+            class="ap-header"
+            role="button"
+            tabindex="0"
+            aria-expanded="false"
+            onclick="toggleAP(this)"
+            onkeydown="
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                toggleAP(this);
+              }
+            "
+          >
+            <div class="ap-header-left">
+              <span class="ap-number">AP4</span>
+              <div>
+                <h3>Sécurité Civile — Infrastructure Préfectorale</h3>
+                <p class="ap-context">
+                  Direction Générale de la Sécurité Civile — Préfecture Zone Est
+                </p>
+              </div>
+            </div>
+            <div class="ap-header-right">
+              <span class="ap-status ap-progress"
+                ><i class="fas fa-spinner fa-spin"></i> En cours</span
+              >
+              <i class="fas fa-chevron-down ap-toggle"></i>
+            </div>
+          </div>
+          <div class="ap-body">
+            <div class="ap-overview">
+              <div class="ap-desc">
+                <h4><i class="fas fa-crosshairs"></i> Contexte & Objectifs</h4>
+                <p>
+                  La
+                  <strong
+                    >Direction Générale de la Sécurité Civile et de la Gestion
+                    des Crises (DGSCGC)</strong
+                  >
+                  confie la conception d'une infrastructure réseau complète pour
+                  la <strong>Préfecture Zone Est</strong>. Le projet inclut
+                  l'Active Directory, la <strong>VoIP</strong>, la
+                  <strong>messagerie</strong>, la <strong>supervision</strong>,
+                  l'application métier <strong>eBrigade</strong>, une
+                  <strong>DMZ</strong>, un <strong>VPN Road Warrior</strong> et
+                  la <strong>haute disponibilité</strong> — le tout conforme aux
+                  recommandations <strong>ANSSI</strong> pour les pare-feux.
+                </p>
+                <p><strong>Groupe :</strong> Samy ALBISSER & Emre ALBAYRAK</p>
+              </div>
+              <div class="ap-infos">
+                <div class="ap-info-item">
+                  <i class="fas fa-clock"></i>
+                  <span
+                    ><strong>Durée :</strong> 10 semaines (fév. – juin
+                    2026)</span
+                  >
+                </div>
+                <div class="ap-info-item">
+                  <i class="fas fa-exclamation-triangle"></i>
+                  <span
+                    ><strong>Niveau :</strong> Projet de synthèse — le plus
+                    complet</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ap-tech-section">
+              <h4><i class="fas fa-cogs"></i> Services à déployer</h4>
+              <div class="ap-services-grid">
+                <div class="ap-service">
+                  <span class="ap-service-icon"
+                    ><i class="fas fa-sitemap"></i
+                  ></span>
+                  <strong>Active Directory</strong>
+                  <small>Annuaire & authentification</small>
+                </div>
+                <div class="ap-service">
+                  <span class="ap-service-icon"
+                    ><i class="fas fa-phone-alt"></i
+                  ></span>
+                  <strong>VoIP</strong>
+                  <small>Téléphonie IP</small>
+                </div>
+                <div class="ap-service">
+                  <span class="ap-service-icon"
+                    ><i class="fas fa-envelope"></i
+                  ></span>
+                  <strong>Messagerie</strong>
+                  <small>Mail sécurisé</small>
+                </div>
+                <div class="ap-service">
+                  <span class="ap-service-icon"
+                    ><i class="fas fa-chart-bar"></i
+                  ></span>
+                  <strong>Supervision</strong>
+                  <small>Monitoring infrastructure</small>
+                </div>
+                <div class="ap-service">
+                  <span class="ap-service-icon"
+                    ><i class="fas fa-fire-extinguisher"></i
+                  ></span>
+                  <strong>eBrigade</strong>
+                  <small>Application métier</small>
+                </div>
+                <div class="ap-service">
+                  <span class="ap-service-icon"
+                    ><i class="fas fa-project-diagram"></i
+                  ></span>
+                  <strong>DMZ</strong>
+                  <small>Zone démilitarisée</small>
+                </div>
+                <div class="ap-service">
+                  <span class="ap-service-icon"
+                    ><i class="fas fa-user-shield"></i
+                  ></span>
+                  <strong>VPN Road Warrior</strong>
+                  <small>Accès distant sécurisé</small>
+                </div>
+                <div class="ap-service">
+                  <span class="ap-service-icon"
+                    ><i class="fas fa-sync-alt"></i
+                  ></span>
+                  <strong>Haute Disponibilité</strong>
+                  <small>Résilience & redondance</small>
+                </div>
+              </div>
+            </div>
+            <div class="ap-tech-tags">
+              <span>Active Directory</span><span>VoIP</span><span>DMZ</span>
+              <span>VPN Road Warrior</span><span>Supervision</span
+              ><span>ANSSI</span> <span>eBrigade</span
+              ><span>Haute Disponibilité</span><span>Plan ORSEC</span>
+            </div>
+            <div class="ap-competences-bar">
+              <span
+                ><i class="fas fa-check"></i> Concevoir une infrastructure</span
+              >
+              <span><i class="fas fa-check"></i> Assurer la cybersécurité</span>
+              <span
+                ><i class="fas fa-check"></i> Administrer systèmes &
+                réseaux</span
+              >
+            </div>
+            <div class="ap-competences-e5">
+              <h4>
+                <i class="fas fa-graduation-cap"></i> Compétences E5 mobilisées
+              </h4>
+              <div class="e5-badges">
+                <span class="e5-badge"
+                  ><span class="e5-code">C1</span> Gérer le patrimoine
+                  informatique</span
+                >
+                <span class="e5-badge"
+                  ><span class="e5-code">C2</span> Répondre aux incidents et
+                  demandes</span
+                >
+                <span class="e5-badge"
+                  ><span class="e5-code">C4</span> Travailler en mode
+                  projet</span
+                >
+                <span class="e5-badge"
+                  ><span class="e5-code">C5</span> Mettre à disposition un
+                  service</span
+                >
+                <span class="e5-badge"
+                  ><span class="e5-code">C6</span> Organiser son développement
+                  professionnel</span
+                >
+              </div>
+            </div>
+            <div class="ap-livrables">
+              <h4>
+                <i class="fas fa-file-download"></i> Livrables & Documents
+              </h4>
+              <div class="ap-livrables-grid">
+                <a
+                  href="assets/Ateliers Professionels BTS SIO/AP4/Sujet AP4.pdf"
+                  target="_blank"
+                  class="ap-livrable-btn"
+                >
+                  <i class="fas fa-file-pdf"></i> Sujet AP4
+                </a>
+                <a
+                  href="assets/Ateliers Professionels BTS SIO/AP4/AP4_cas_securite_civile-2026_avec_ANNEXES.pdf"
+                  target="_blank"
+                  class="ap-livrable-btn"
+                >
+                  <i class="fas fa-file-pdf"></i> Documentation complète +
+                  Annexes
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== RÉALISATIONS CARSAT ==================== -->
+    <section id="procedures" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-number">07.</span> Réalisations professionnelles
+          — CARSAT
+        </h2>
+        <p class="section-subtitle">
+          Procédures techniques et projets réalisés pendant mon alternance,
+          documentés et référencés
+        </p>
+
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">Toutes</button>
+          <button class="filter-btn" data-filter="masterisation">
+            Masterisation
+          </button>
+          <button class="filter-btn" data-filter="support">Support</button>
+          <button class="filter-btn" data-filter="deploiement">
+            Déploiement
+          </button>
+          <button class="filter-btn" data-filter="documentation">
+            Documentation
+          </button>
+        </div>
+
+        <div class="procedures-grid">
+          <!-- Masterisation d'un PC -->
+          <a
+            href="assets/Alternance Carsat/Masterisation_d_un_PC.pdf"
+            target="_blank"
+            class="procedure-card"
+            data-category="masterisation"
+          >
+            <div class="procedure-icon"><i class="fas fa-hdd"></i></div>
+            <h3>Masterisation d'un PC</h3>
+            <p>
+              Procédure complète de masterisation via PXE/Ivanti : démarrage
+              réseau (HP/Dell/Lenovo), séquence de tâches MDT/WDS, analyse de
+              sécurité et vérifications post-installation.
+            </p>
+            <div class="procedure-meta">
+              <span class="procedure-source"
+                ><i class="fas fa-file-pdf"></i> Masterisation_d_un_PC.pdf</span
+              >
+            </div>
+            <div class="procedure-tags">
+              <span>PXE</span><span>Ivanti</span><span>MDT</span
+              ><span>WDS</span>
+            </div>
+          </a>
+
+          <!-- Formatage sécurisé -->
+          <a
+            href="assets/Alternance Carsat/Formatage-Masterisation.docx"
+            target="_blank"
+            class="procedure-card"
+            data-category="masterisation"
+          >
+            <div class="procedure-icon"><i class="fas fa-eraser"></i></div>
+            <h3>Formatage & Effacement sécurisé</h3>
+            <p>
+              Procédure d'effacement sécurisé des données conforme à la norme
+              NIST SP 800-88 via Dell Data Wipe, suivie d'une réinstallation PXE
+              MDT/WDS avec traçabilité complète.
+            </p>
+            <div class="procedure-meta">
+              <span class="procedure-source"
+                ><i class="fas fa-file-word"></i>
+                Formatage-Masterisation.docx</span
+              >
+            </div>
+            <div class="procedure-tags">
+              <span>NIST SP 800-88</span><span>Dell Data Wipe</span
+              ><span>Sécurité</span>
+            </div>
+          </a>
+
+          <!-- Applications à installer -->
+          <a
+            href="assets/Alternance Carsat/Application_ a_installer_et_config_type.pdf"
+            target="_blank"
+            class="procedure-card"
+            data-category="masterisation"
+          >
+            <div class="procedure-icon"><i class="fas fa-download"></i></div>
+            <h3>Applications & Configuration type</h3>
+            <p>
+              Liste et procédure d'installation des applications standard :
+              paramètres capot, déplacement AD, installation TESSI, déploiement
+              via Chocolatey, mise à jour des pilotes selon le constructeur
+              (HP/Lenovo/Dell).
+            </p>
+            <div class="procedure-meta">
+              <span class="procedure-source"
+                ><i class="fas fa-file-pdf"></i>
+                Application_a_installer_et_config_type.pdf</span
+              >
+            </div>
+            <div class="procedure-tags">
+              <span>Chocolatey</span><span>TESSI</span><span>Pilotes</span>
+            </div>
+          </a>
+
+          <!-- Choix du matériel -->
+          <a
+            href="assets/Alternance Carsat/Choix_du_mat%C3%A9riel_lors_de_l_arriv%C3%A9e_d_un_agent.docx"
+            target="_blank"
+            class="procedure-card"
+            data-category="deploiement"
+          >
+            <div class="procedure-icon"><i class="fas fa-laptop"></i></div>
+            <h3>Choix du matériel — Arrivée agent</h3>
+            <p>
+              Règles d'affectation du matériel informatique (HP, Lenovo, Dell)
+              en fonction du statut et du profil de l'agent à son arrivée dans
+              l'organisme.
+            </p>
+            <div class="procedure-meta">
+              <span class="procedure-source"
+                ><i class="fas fa-file-word"></i>
+                Choix_du_matériel_lors_de_l_arrivée_d_un_agent.docx</span
+              >
+            </div>
+            <div class="procedure-tags">
+              <span>HP</span><span>Lenovo</span><span>Dell</span>
+            </div>
+          </a>
+
+          <!-- Arrivée agent -->
+          <a
+            href="assets/Alternance Carsat/Arriv%C3%A9e_de_l_agent + Applications_%C3%A0_tester.pdf"
+            target="_blank"
+            class="procedure-card"
+            data-category="deploiement"
+          >
+            <div class="procedure-icon"><i class="fas fa-user-plus"></i></div>
+            <h3>Arrivée agent & Applications à tester</h3>
+            <p>
+              Checklist de distribution du matériel, configuration du mot de
+              passe initial, tests Outlook, Teams, portail interne et Cisco
+              Jabber pour les nouveaux arrivants.
+            </p>
+            <div class="procedure-meta">
+              <span class="procedure-source"
+                ><i class="fas fa-file-pdf"></i> Arrivée_de_l_agent.pdf</span
+              >
+            </div>
+            <div class="procedure-tags">
+              <span>Onboarding</span><span>Tests</span><span>Checklist</span>
+            </div>
+          </a>
+
+          <!-- Communication -->
+          <a
+            href="assets/Alternance Carsat/Communication.pdf"
+            target="_blank"
+            class="procedure-card"
+            data-category="documentation"
+          >
+            <div class="procedure-icon"><i class="fas fa-envelope"></i></div>
+            <h3>Communication — Accueil agent</h3>
+            <p>
+              Modèle d'e-mail de bienvenue et invitation pour la récupération du
+              poste informatique lors de l'intégration d'un nouvel agent.
+            </p>
+            <div class="procedure-meta">
+              <span class="procedure-source"
+                ><i class="fas fa-file-pdf"></i> Communication.pdf</span
+              >
+            </div>
+            <div class="procedure-tags">
+              <span>E-mail</span><span>Template</span><span>Accueil</span>
+            </div>
+          </a>
+
+          <!-- Citrix -->
+          <a
+            href="assets/Alternance Carsat/Citrix.pdf"
+            target="_blank"
+            class="procedure-card"
+            data-category="support"
+          >
+            <div class="procedure-icon">
+              <i class="fas fa-window-restore"></i>
+            </div>
+            <h3>Citrix Workspace — Dépannage</h3>
+            <p>
+              Procédure de résolution des problèmes Citrix Workspace :
+              nettoyage, suppression registre, réinstallation propre, résolution
+              des erreurs C++ et .NET Framework.
+            </p>
+            <div class="procedure-meta">
+              <span class="procedure-source"
+                ><i class="fas fa-file-pdf"></i> Citrix.pdf</span
+              >
+            </div>
+            <div class="procedure-tags">
+              <span>Citrix</span><span>Registre</span><span>.NET</span>
+            </div>
+          </a>
+
+          <!-- Remplacement PC -->
+          <a
+            href="assets/Alternance Carsat/Remplacement (1) (1).docx"
+            target="_blank"
+            class="procedure-card"
+            data-category="deploiement"
+          >
+            <div class="procedure-icon"><i class="fas fa-sync-alt"></i></div>
+            <h3>Remplacement de PC</h3>
+            <p>
+              Procédure complète de remplacement : sauvegarde des données,
+              transfert, configuration
+              Outlook/Teams/Firefox/Jabber/Colibri/OneNote/TESSI, et guide de
+              dépannage.
+            </p>
+            <div class="procedure-meta">
+              <span class="procedure-source"
+                ><i class="fas fa-file-word"></i> Remplacement.docx</span
+              >
+            </div>
+            <div class="procedure-tags">
+              <span>Migration</span><span>Sauvegarde</span><span>Config</span>
+            </div>
+          </a>
+
+          <!-- Boitier 4G -->
+          <a
+            href="assets/Alternance Carsat/2024_09_Initialisation du boitier 4G.pdf"
+            target="_blank"
+            class="procedure-card"
+            data-category="deploiement"
+          >
+            <div class="procedure-icon"><i class="fas fa-wifi"></i></div>
+            <h3>Initialisation boîtier 4G</h3>
+            <p>
+              Mise en route des boîtiers 4G, configuration WiFi et procédure de
+              connexion pour iOS, Android et PC.
+            </p>
+            <div class="procedure-meta">
+              <span class="procedure-source"
+                ><i class="fas fa-file-pdf"></i>
+                Initialisation_du_boitier_4G.pdf</span
+              >
+            </div>
+            <div class="procedure-tags">
+              <span>4G</span><span>WiFi</span><span>Mobile</span>
+            </div>
+          </a>
+
+          <!-- Téléphone SSR -->
+          <a
+            href="assets/Alternance Carsat/2024_10_Initialisation du t%C3%A9l%C3%A9phone SSR.docx"
+            target="_blank"
+            class="procedure-card"
+            data-category="deploiement"
+          >
+            <div class="procedure-icon"><i class="fas fa-mobile-alt"></i></div>
+            <h3>Initialisation téléphone SSR</h3>
+            <p>
+              Procédure d'initialisation des smartphones SSR : création compte
+              Google, configuration PDF Scanner, transfert de données de
+              l'ancien vers le nouveau terminal.
+            </p>
+            <div class="procedure-meta">
+              <span class="procedure-source"
+                ><i class="fas fa-file-word"></i>
+                Initialisation_du_téléphone_SSR.docx</span
+              >
+            </div>
+            <div class="procedure-tags">
+              <span>Android</span><span>Samsung</span><span>Config</span>
+            </div>
+          </a>
+
+          <!-- Remplacement Tel SSR -->
+          <a
+            href="assets/Alternance Carsat/2025_RemplacementTel_SSR.xlsx"
+            target="_blank"
+            class="procedure-card"
+            data-category="deploiement"
+          >
+            <div class="procedure-icon">
+              <i class="fas fa-clipboard-list"></i>
+            </div>
+            <h3>Suivi remplacement smartphones SSR</h3>
+            <p>
+              Tableau de suivi du remplacement de 54 smartphones Samsung A16 sur
+              8 sites SSR : Colmar, Haguenau, Metz, Strasbourg, Mulhouse,
+              Sarreguemines, Séléstat et Thionville.
+            </p>
+            <div class="procedure-meta">
+              <span class="procedure-source"
+                ><i class="fas fa-file-excel"></i>
+                RemplacementTel_SSR.xlsx</span
+              >
+            </div>
+            <div class="procedure-tags">
+              <span>54 smartphones</span><span>8 sites</span
+              ><span>Samsung A16</span>
+            </div>
+          </a>
+
+          <!-- RUR Excel -->
+          <a
+            href="assets/Alternance Carsat/Renseigner_le_mat%C3%A9riel_dans_RUR_Excel.pdf"
+            target="_blank"
+            class="procedure-card"
+            data-category="documentation"
+          >
+            <div class="procedure-icon"><i class="fas fa-table"></i></div>
+            <h3>Renseigner le matériel — RUR/Excel</h3>
+            <p>
+              Procédure de saisie et de traçabilité du matériel informatique
+              dans l'outil RUR et le tableur Excel de suivi du parc.
+            </p>
+            <div class="procedure-meta">
+              <span class="procedure-source"
+                ><i class="fas fa-file-pdf"></i>
+                Renseigner_le_matériel_dans_RUR_Excel.pdf</span
+              >
+            </div>
+            <div class="procedure-tags">
+              <span>RUR</span><span>Excel</span><span>Inventaire</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ÉPREUVE E5 ==================== -->
+    <section id="epreuve-e5" class="section">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-number">08.</span> Épreuve E5 — Contexte &
+          Compétences
+        </h2>
+        <p class="section-subtitle">
+          Production et fourniture de services informatiques — BTS SIO
+        </p>
+
+        <div class="e5-intro">
+          <div class="e5-description">
+            <h3>
+              <i class="fas fa-info-circle"></i> Qu'est-ce que l'épreuve E5 ?
+            </h3>
+            <p>
+              L'épreuve E5 du BTS SIO porte sur la
+              <strong
+                >production et la fourniture de services informatiques</strong
+              >. Elle évalue les compétences acquises en situation
+              professionnelle réelle à travers les réalisations professionnelles
+              effectuées en entreprise et en centre de formation.
+            </p>
+            <p>
+              Conformément au
+              <strong>référentiel (arrêté du 8 juillet 2024)</strong>, le
+              candidat présente un portefeuille de compétences couvrant les 6
+              compétences du bloc.
+            </p>
+          </div>
+        </div>
+
+        <div class="e5-competences">
+          <h3><i class="fas fa-star"></i> Les 6 compétences du bloc E5</h3>
+          <div class="competence-grid">
+            <div class="competence-card">
+              <div class="competence-number">C1</div>
+              <h4>Gérer le patrimoine informatique</h4>
+              <p>
+                Recenser, identifier, mettre à jour les éléments du patrimoine
+                informatique. Mettre en place et vérifier les niveaux
+                d'habilitation.
+              </p>
+              <div class="competence-realisation">
+                <a href="#procedures"
+                  ><i class="fas fa-check"></i> Suivi & remplacement 54
+                  smartphones sur 8 sites SSR</a
+                >
+                <a href="#procedures"
+                  ><i class="fas fa-check"></i> Traçabilité matériel RUR/Excel —
+                  100+ postes</a
+                >
+                <a href="#projets" data-open-ap="2"
+                  ><i class="fas fa-check"></i> Gestion de parc GLPI + OCS
+                  Inventory (AP2)</a
+                >
+              </div>
+            </div>
+            <div class="competence-card">
+              <div class="competence-number">C2</div>
+              <h4>Répondre aux incidents et demandes</h4>
+              <p>
+                Collecter et suivre les demandes, traiter les incidents,
+                résoudre les problèmes de manière efficace.
+              </p>
+              <div class="competence-realisation">
+                <a href="#procedures"
+                  ><i class="fas fa-check"></i> Résolution d'incidents via
+                  ticketing ISILOG</a
+                >
+                <a href="#procedures"
+                  ><i class="fas fa-check"></i> Dépannage Citrix : nettoyage
+                  registre, réinstallation</a
+                >
+                <a href="#projets" data-open-ap="2"
+                  ><i class="fas fa-check"></i> Assistance à distance RustDesk
+                  auto-hébergé (AP2)</a
+                >
+              </div>
+            </div>
+            <div class="competence-card">
+              <div class="competence-number">C3</div>
+              <h4>Développer la présence en ligne</h4>
+              <p>
+                Participer à la valorisation de l'image de l'organisation sur
+                les médias numériques. Concevoir, développer et maintenir des
+                sites web accessibles et optimisés.
+              </p>
+              <div class="competence-realisation">
+                <a href="#hero"
+                  ><i class="fas fa-check"></i> Portfolio responsive HTML/CSS/JS
+                  (ce site)</a
+                >
+                <a
+                  href="https://www.linkedin.com/in/samy-albisser"
+                  target="_blank"
+                  ><i class="fas fa-check"></i> Profil LinkedIn professionnel</a
+                >
+                <a href="#procedures"
+                  ><i class="fas fa-check"></i> 15+ procédures techniques
+                  publiées en intranet CARSAT</a
+                >
+                <a href="#hero"
+                  ><i class="fas fa-check"></i> SEO, Open Graph & accessibilité
+                  ARIA</a
+                >
+              </div>
+            </div>
+            <div class="competence-card">
+              <div class="competence-number">C4</div>
+              <h4>Travailler en mode projet</h4>
+              <p>
+                Planifier les activités, évaluer les indicateurs de suivi,
+                analyser les résultats.
+              </p>
+              <div class="competence-realisation">
+                <a href="#projets" data-open-ap="2"
+                  ><i class="fas fa-check"></i> Chef de projet AP2 & AP3 —
+                  budget, planning, livrables</a
+                >
+                <a href="#procedures"
+                  ><i class="fas fa-check"></i> Coordination multi-sites — 54
+                  smartphones sur 8 sites</a
+                >
+                <a href="#projets" data-open-ap="3"
+                  ><i class="fas fa-check"></i> Découpage en 4 lots AP3 —
+                  sprints & jalons</a
+                >
+              </div>
+            </div>
+            <div class="competence-card">
+              <div class="competence-number">C5</div>
+              <h4>Mettre à disposition un service</h4>
+              <p>
+                Réaliser les tests, déployer un service, accompagner les
+                utilisateurs.
+              </p>
+              <div class="competence-realisation">
+                <a href="#procedures"
+                  ><i class="fas fa-check"></i> Masterisation PXE/Ivanti — 100+
+                  postes déployés</a
+                >
+                <a href="#procedures"
+                  ><i class="fas fa-check"></i> Formation Outlook — 17
+                  utilisateurs formés</a
+                >
+                <a href="#projets" data-open-ap="2"
+                  ><i class="fas fa-check"></i> 8 services en production —
+                  PARCUS (AP2)</a
+                >
+              </div>
+            </div>
+            <div class="competence-card">
+              <div class="competence-number">C6</div>
+              <h4>Organiser son développement professionnel</h4>
+              <p>
+                Mettre en place son environnement d'apprentissage,
+                s'auto-former, veille informationnelle.
+              </p>
+              <div class="competence-realisation">
+                <a href="#certifications"
+                  ><i class="fas fa-check"></i> 3 certifications (Cisco ×2,
+                  ANSSI)</a
+                >
+                <a href="#veille"
+                  ><i class="fas fa-check"></i> Veille structurée
+                  Push/Process/Pull</a
+                >
+                <a href="#veille"
+                  ><i class="fas fa-check"></i> Auto-formation IA & nouvelles
+                  technos</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tableau de synthèse Compétences × Réalisations -->
+        <div class="e5-synthese">
+          <h3>
+            <i class="fas fa-table"></i> Tableau de synthèse — Compétences ×
+            Réalisations
+          </h3>
+          <p class="synthese-subtitle">
+            Chaque réalisation couvre une ou plusieurs compétences du bloc E5
+          </p>
+          <div class="synthese-table-wrapper">
+            <table class="synthese-table">
+              <thead>
+                <tr>
+                  <th>Réalisation</th>
+                  <th>Contexte</th>
+                  <th title="Gérer le patrimoine informatique">C1</th>
+                  <th title="Répondre aux incidents et demandes">C2</th>
+                  <th title="Développer la présence en ligne">C3</th>
+                  <th title="Travailler en mode projet">C4</th>
+                  <th title="Mettre à disposition un service">C5</th>
+                  <th title="Organiser son développement pro.">C6</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sécurisation postes nomades (Windows & Linux)</td>
+                  <td><span class="ctx-badge ctx-ap">AP1</span></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Création DSI interne PARCUS</td>
+                  <td><span class="ctx-badge ctx-ap">AP2</span></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                </tr>
+                <tr>
+                  <td>SI Hautement Disponible ECP Multi-Sites</td>
+                  <td><span class="ctx-badge ctx-ap">AP3</span></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Infrastructure préfectorale Sécu. Civile</td>
+                  <td><span class="ctx-badge ctx-ap">AP4</span></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Masterisation & déploiement PXE/Ivanti</td>
+                  <td><span class="ctx-badge ctx-carsat">CARSAT</span></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Remplacement 54 smartphones SSR</td>
+                  <td><span class="ctx-badge ctx-carsat">CARSAT</span></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td></td>
+                  <td></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Support & ticketing ISILOG</td>
+                  <td><span class="ctx-badge ctx-carsat">CARSAT</span></td>
+                  <td></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Formation Outlook (17 utilisateurs)</td>
+                  <td><span class="ctx-badge ctx-carsat">CARSAT</span></td>
+                  <td></td>
+                  <td></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Portfolio BTS SIO (ce site)</td>
+                  <td><span class="ctx-badge ctx-perso">Personnel</span></td>
+                  <td></td>
+                  <td></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td></td>
+                  <td></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Profil LinkedIn professionnel</td>
+                  <td><span class="ctx-badge ctx-perso">Personnel</span></td>
+                  <td></td>
+                  <td></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td></td>
+                  <td></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Veille technologique IA & LLM</td>
+                  <td><span class="ctx-badge ctx-perso">Personnel</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Rédaction de 15+ procédures techniques</td>
+                  <td><span class="ctx-badge ctx-carsat">CARSAT</span></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                  <td></td>
+                  <td></td>
+                  <td><i class="fas fa-check synthese-check"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="e5-documents">
+          <h3><i class="fas fa-folder-open"></i> Documents de référence E5</h3>
+          <div class="doc-grid">
+            <a
+              href="assets/épreuve E5/Powerpoint diaporama épreuve E5.pdf"
+              class="doc-card"
+              target="_blank"
+            >
+              <i class="fas fa-file-powerpoint"></i>
+              <span>Diaporama E5</span>
+              <small>Présentation orale</small>
+            </a>
+            <a
+              href="assets/épreuve E5/Tableau de synthèse épreuve e5.xlsx"
+              class="doc-card"
+              target="_blank"
+            >
+              <i class="fas fa-file-excel"></i>
+              <span>Tableau de synthèse</span>
+              <small>Compétences × Réalisations</small>
+            </a>
+            <a
+              href="assets/épreuve E5/Référentiel épreuve e5.docx"
+              class="doc-card"
+              target="_blank"
+            >
+              <i class="fas fa-file-word"></i>
+              <span>Référentiel E5</span>
+              <small>Modalités d'évaluation</small>
+            </a>
+            <a
+              href="assets/épreuve E5/Référentiel BTS SIO.pdf"
+              class="doc-card"
+              target="_blank"
+            >
+              <i class="fas fa-file-pdf"></i>
+              <span>Référentiel BTS SIO</span>
+              <small>Arrêté du 8 juillet 2024</small>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VEILLE TECHNOLOGIQUE ==================== -->
+    <section id="veille" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-number">09.</span> Veille technologique
+        </h2>
+        <p class="section-subtitle">
+          L'Intelligence Artificielle & les Grands Modèles de Langage (LLM)
+        </p>
+
+        <!-- Intro veille -->
+        <div class="veille-intro">
+          <div class="veille-intro-text">
+            <h3><i class="fas fa-brain"></i> Pourquoi cette veille ?</h3>
+            <p>
+              L'évolution des
+              <strong>grands modèles de langage (LLM)</strong> est
+              <strong>exponentielle</strong>. C'est un domaine en
+              <strong>mutation constante</strong> : si j'oublie de suivre
+              l'actualité pendant 2 à 3 semaines, j'ai l'impression d'avoir raté
+              un cargo entier d'informations. Entre le moment où ce site a été
+              créé et celui où vous le consultez, l'écosystème a sûrement déjà
+              changé.
+            </p>
+            <p>
+              Sur deux ans (2024–2026), les avancées ont été
+              <strong>considérables</strong> : nouvelles architectures,
+              capacités multimodales, agents autonomes, intégration dans les
+              outils du quotidien… Un sujet fascinant qui impacte directement le
+              métier de technicien et l'avenir de l'IT.
+            </p>
+          </div>
+        </div>
+
+        <!-- Méthodologie Push Process Pull -->
+        <div class="veille-methodology">
+          <h3>
+            <i class="fas fa-cogs"></i> Ma méthodologie — Push, Process, Pull
+          </h3>
+          <div class="method-pipeline">
+            <div class="method-step">
+              <div class="method-step-number">1</div>
+              <div class="method-step-icon"><i class="fas fa-rss"></i></div>
+              <h4>PUSH — Collecte</h4>
+              <p>
+                Agrégation automatique via flux RSS et alertes par mots-clés
+              </p>
+              <div class="method-tools">
+                <span class="tool-badge"
+                  ><i class="fas fa-rss-square"></i> Feedly</span
+                >
+                <span class="tool-badge"
+                  ><i class="fab fa-google"></i> Google Alerts</span
+                >
+              </div>
+            </div>
+            <div class="method-arrow"><i class="fas fa-arrow-down"></i></div>
+            <div class="method-step">
+              <div class="method-step-number">2</div>
+              <div class="method-step-icon"><i class="fas fa-robot"></i></div>
+              <h4>PROCESS — Analyse</h4>
+              <p>Recherche contextuelle et synthèse assistée par IA</p>
+              <div class="method-tools">
+                <span class="tool-badge"
+                  ><i class="fas fa-comments"></i> ChatGPT</span
+                >
+                <span class="tool-badge"
+                  ><i class="fas fa-search"></i> Perplexity</span
+                >
+              </div>
+            </div>
+            <div class="method-arrow"><i class="fas fa-arrow-down"></i></div>
+            <div class="method-step">
+              <div class="method-step-number">3</div>
+              <div class="method-step-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h4>PULL — Capitalisation</h4>
+              <p>Stockage et organisation des informations pertinentes</p>
+              <div class="method-tools">
+                <span class="tool-badge"
+                  ><i class="fas fa-book"></i> Notion</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Évolution des LLM -->
+        <div class="veille-evolution">
+          <h3>
+            <i class="fas fa-chart-line"></i> Évolution des modèles sur 2 ans
+            (2024–2026)
+          </h3>
+          <p class="evolution-subtitle">
+            Une progression fulgurante en seulement 24 mois
+          </p>
+          <div class="evolution-tracks">
+            <!-- OpenAI -->
+            <div
+              class="evolution-track"
+              data-mobile-summary="GPT-4 → 4 Turbo → GPT-4o → o1 → o3 → GPT-5 → GPT-5.2"
+            >
+              <div class="track-label">
+                <span class="track-logo openai">OpenAI</span>
+              </div>
+              <div class="track-bar">
+                <div class="track-progress" data-progress="95">
+                  <div class="track-start">GPT-4</div>
+                  <div class="track-milestones">
+                    <span class="milestone">4T</span>
+                    <span class="milestone">4o</span>
+                    <span class="milestone">o1</span>
+                    <span class="milestone">o3</span>
+                    <span class="milestone">5</span>
+                  </div>
+                  <div class="track-end">GPT-5.2</div>
+                </div>
+              </div>
+            </div>
+            <!-- Anthropic -->
+            <div
+              class="evolution-track"
+              data-mobile-summary="Claude 3 → Opus → 3.5 Sonnet → Claude 4 → Opus 4 → Opus 4.6"
+            >
+              <div class="track-label">
+                <span class="track-logo anthropic">Anthropic</span>
+              </div>
+              <div class="track-bar">
+                <div class="track-progress" data-progress="90">
+                  <div class="track-start">Claude 3</div>
+                  <div class="track-milestones">
+                    <span class="milestone">Opus</span>
+                    <span class="milestone">3.5</span>
+                    <span class="milestone">4</span>
+                    <span class="milestone">Opus 4</span>
+                  </div>
+                  <div class="track-end">Opus 4.6</div>
+                </div>
+              </div>
+            </div>
+            <!-- Google -->
+            <div
+              class="evolution-track"
+              data-mobile-summary="Gemini 1.0 → 1.5 Pro → 2.0 Flash → 2.5 Pro → 3.0 → Gemini 3.5"
+            >
+              <div class="track-label">
+                <span class="track-logo google">Google</span>
+              </div>
+              <div class="track-bar">
+                <div class="track-progress" data-progress="88">
+                  <div class="track-start">Gemini 1.0</div>
+                  <div class="track-milestones">
+                    <span class="milestone">1.5</span>
+                    <span class="milestone">2.0</span>
+                    <span class="milestone">2.5</span>
+                    <span class="milestone">3.0</span>
+                  </div>
+                  <div class="track-end">Gemini 3.5</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thématiques clés -->
+        <div class="veille-themes">
+          <div class="veille-grid">
+            <div class="veille-card veille-card-accent">
+              <div class="veille-icon">
+                <i class="fas fa-exclamation-triangle"></i>
+              </div>
+              <h3>🔒 Sécurité & Risques</h3>
+              <p>
+                Les LLM introduisent de
+                <strong>nouveaux vecteurs d'attaque</strong> : le
+                <strong>Prompt Injection</strong> permet de détourner le
+                comportement d'un modèle, tandis que les
+                <strong>fuites de données d'entreprise</strong> via des
+                conversations non encadrées posent un risque majeur de
+                confidentialité. La question de la gouvernance de l'IA en
+                entreprise est devenue centrale.
+              </p>
+              <div class="veille-sources">
+                <span><i class="fas fa-link"></i> OWASP LLM Top 10</span>
+                <span><i class="fas fa-link"></i> ANSSI</span>
+                <span><i class="fas fa-link"></i> NIST AI RMF</span>
+              </div>
+            </div>
+            <div class="veille-card veille-card-accent">
+              <div class="veille-icon"><i class="fas fa-plug"></i></div>
+              <h3>🔌 Intégration & Omniprésence</h3>
+              <p>
+                L'IA s'intègre partout : <strong>Microsoft Copilot</strong> dans
+                toute la suite M365 (Word, Excel, Teams, Outlook…),
+                <strong>Gemini</strong> intégré nativement dans Android, Chrome
+                et Workspace, <strong>GitHub Copilot</strong> dans VS Code. La
+                tendance est à l'<strong>omniprésence de l'IA</strong> comme
+                assistant dans chaque outil.
+              </p>
+              <div class="veille-sources">
+                <span><i class="fas fa-link"></i> Microsoft 365</span>
+                <span><i class="fas fa-link"></i> Google AI</span>
+                <span><i class="fas fa-link"></i> GitHub</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ce que j'ai appris -->
+        <div class="veille-learned">
+          <h3>
+            <i class="fas fa-graduation-cap"></i> Ce que cette veille m'a appris
+          </h3>
+          <div class="learned-grid">
+            <div class="learned-item">
+              <i class="fas fa-lightbulb"></i>
+              <p>
+                Comprendre les architectures Transformer et le fonctionnement
+                des LLM
+              </p>
+            </div>
+            <div class="learned-item">
+              <i class="fas fa-shield-alt"></i>
+              <p>
+                Identifier les risques liés à l'IA en entreprise (fuites de
+                données, biais, hallucinations)
+              </p>
+            </div>
+            <div class="learned-item">
+              <i class="fas fa-tools"></i>
+              <p>
+                Utiliser l'IA comme outil de productivité dans mon travail
+                quotidien
+              </p>
+            </div>
+            <div class="learned-item">
+              <i class="fas fa-sync"></i>
+              <p>Adopter une méthodologie de veille structurée et pérenne</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJET PROFESSIONNEL ==================== -->
+    <section id="projet-pro" class="section">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-number">10.</span> Poursuite d'études & Projet
+          professionnel
+        </h2>
+        <p class="section-subtitle">
+          Mon parcours vers le métier d'Administrateur Systèmes & Réseaux
+        </p>
+
+        <div class="career-tree">
+          <!-- Objectif final -->
+          <div class="career-goal">
+            <div class="career-goal-icon"><i class="fas fa-bullseye"></i></div>
+            <h3>Objectif à moyen terme</h3>
+            <span class="career-goal-title"
+              >Administrateur Systèmes & Réseaux</span
+            >
+          </div>
+
+          <div class="career-connector">
+            <div class="connector-line"></div>
+            <div class="connector-split"></div>
+          </div>
+
+          <!-- Options -->
+          <div class="career-options">
+            <div class="career-option option-1">
+              <div class="option-badge">Option 1</div>
+              <div class="option-icon"><i class="fas fa-shield-alt"></i></div>
+              <h4>Licence générale Informatique</h4>
+              <p class="option-speciality">Option Cybersécurité</p>
+              <div class="option-schools">
+                <div class="school-item">
+                  <i class="fas fa-building"></i>
+                  <div>
+                    <strong>UIMM Pôle Formation Alsace</strong>
+                    <span>En alternance</span>
+                  </div>
+                </div>
+                <div class="school-divider">ou</div>
+                <div class="school-item">
+                  <i class="fas fa-university"></i>
+                  <div>
+                    <strong>CNAM Strasbourg</strong>
+                    <span>Formation continue</span>
+                  </div>
+                </div>
+              </div>
+              <div class="option-tags">
+                <span>Cybersécurité</span>
+                <span>Sécurité des SI</span>
+                <span>Audit</span>
+              </div>
+            </div>
+
+            <div class="career-option option-2">
+              <div class="option-badge">Option 2</div>
+              <div class="option-icon"><i class="fas fa-server"></i></div>
+              <h4>Licence Pro Métiers de l'informatique</h4>
+              <p class="option-speciality">
+                Administration et Sécurité des Systèmes et Réseaux (ASSR)
+              </p>
+              <div class="option-schools">
+                <div class="school-item">
+                  <i class="fas fa-university"></i>
+                  <div>
+                    <strong>IUT d'Illkirch</strong>
+                    <span>Université de Strasbourg — En alternance</span>
+                  </div>
+                </div>
+              </div>
+              <div class="option-tags">
+                <span>Administration</span>
+                <span>Réseaux</span>
+                <span>Sécurité</span>
+                <span>Systèmes</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Situation actuelle -->
+          <div class="career-connector career-connector-reverse">
+            <div class="connector-split"></div>
+            <div class="connector-line"></div>
+          </div>
+
+          <div class="career-current">
+            <div class="career-current-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Situation actuelle</h3>
+            <span>BTS SIO SISR — CARSAT Alsace-Moselle</span>
+            <span class="career-current-date"
+              >Diplôme prévu : Juillet 2026</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TÉMOIGNAGES ==================== -->
+    <section class="section section-alt" id="temoignages">
+      <div class="container">
+        <h2 class="section-title">💬 Ce qu'on dit de moi</h2>
+        <p class="section-subtitle">
+          Retours de professionnels et enseignants avec qui j'ai travaillé
+        </p>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <i class="fas fa-quote-left testimonial-icon"></i>
+              <p>
+                Samy a fait preuve d'une grande autonomie et d'une vraie rigueur
+                technique pendant son alternance. Il a su prendre en main les
+                projets de masterisation et de déploiement avec beaucoup de
+                sérieux et d'efficacité.
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">
+                <i class="fas fa-user-tie"></i>
+              </div>
+              <div>
+                <strong>Tuteur entreprise</strong>
+                <span>Service Infrastructure — CARSAT Alsace-Moselle</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <i class="fas fa-quote-left testimonial-icon"></i>
+              <p>
+                Un étudiant impliqué qui n'hésite pas à aller au-delà de ce qui
+                est demandé. Ses documentations sont toujours complètes et bien
+                structurées. Je le recommande pour tout poste en systèmes et
+                réseaux.
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">
+                <i class="fas fa-chalkboard-teacher"></i>
+              </div>
+              <div>
+                <strong>Professeur référent BTS SIO</strong>
+                <span>Centre de formation — ECP Strasbourg</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="testimonial-note">
+          <i class="fas fa-info-circle"></i> Section en cours de mise à jour —
+          témoignages réels à venir prochainement
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== POURQUOI ME CHOISIR ==================== -->
+    <section class="section" id="why-me">
+      <div class="container">
+        <h2 class="section-title">🤝 Pourquoi me choisir ?</h2>
+        <p class="section-subtitle">
+          Ce que j'apporte concrètement à votre équipe, dès le premier jour
+        </p>
+        <div class="why-me-grid">
+          <div class="why-me-item">
+            <div class="why-me-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <h4>Déjà opérationnel</h4>
+            <p>
+              2 ans d'alternance CARSAT — masterisation, support N1/N2,
+              déploiement en conditions réelles sur 100+ postes
+            </p>
+          </div>
+          <div class="why-me-item">
+            <div class="why-me-icon">
+              <i class="fas fa-layer-group"></i>
+            </div>
+            <h4>Polyvalent</h4>
+            <p>
+              Systèmes, Réseaux, Support, Sécurité, Scripting — un profil
+              complet qui s'adapte à tous vos besoins SISR
+            </p>
+          </div>
+          <div class="why-me-item">
+            <div class="why-me-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h4>Certifié</h4>
+            <p>
+              3 certifications professionnelles : Cisco CCNA&nbsp;×2 et ANSSI
+              SecNumacadémie — preuve d'engagement
+            </p>
+          </div>
+          <div class="why-me-item">
+            <div class="why-me-icon">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <h4>Rigoureux & documenté</h4>
+            <p>
+              15+ procédures rédigées, 388 pages de documentation technique — je
+              structure et je transmets
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-number">11.</span> Me contacter
+        </h2>
+        <p class="section-subtitle">
+          Intéressé par mon profil ? Remplissez le formulaire ou contactez-moi
+          directement
+        </p>
+
+        <div class="contact-layout">
+          <!-- Formulaire de contact -->
+          <div class="contact-form-card">
+            <div class="contact-form-header">
+              <div class="contact-form-icon">
+                <i class="fas fa-paper-plane"></i>
+              </div>
+              <div>
+                <h3>Envoyez-moi un message</h3>
+                <p>Je vous répondrai sous 24h</p>
+              </div>
+            </div>
+            <form
+              class="contact-form"
+              id="contactForm"
+              action="https://formspree.io/f/xpwdwwap"
+              method="POST"
+            >
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactName"
+                    ><i class="fas fa-user"></i> Nom complet</label
+                  >
+                  <input
+                    type="text"
+                    id="contactName"
+                    name="name"
+                    placeholder="Jean Dupont"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="contactEmail"
+                    ><i class="fas fa-envelope"></i> Email professionnel</label
+                  >
+                  <input
+                    type="email"
+                    id="contactEmail"
+                    name="email"
+                    placeholder="jean.dupont@entreprise.fr"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contactCompany"
+                  ><i class="fas fa-building"></i> Entreprise
+                  <span class="form-optional">(optionnel)</span></label
+                >
+                <input
+                  type="text"
+                  id="contactCompany"
+                  name="company"
+                  placeholder="Nom de votre entreprise"
+                />
+              </div>
+              <div class="form-group">
+                <label for="contactSubject"
+                  ><i class="fas fa-tag"></i> Objet</label
+                >
+                <select id="contactSubject" name="subject" required>
+                  <option value="" disabled selected>
+                    Sélectionnez un sujet
+                  </option>
+                  <option value="alternance">
+                    💼 Proposition d'alternance Bac+3
+                  </option>
+                  <option value="stage">📋 Proposition de stage</option>
+                  <option value="emploi">🏢 Offre d'emploi</option>
+                  <option value="information">ℹ️ Demande d'information</option>
+                  <option value="autre">💬 Autre</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="contactMessage"
+                  ><i class="fas fa-comment-dots"></i> Message</label
+                >
+                <textarea
+                  id="contactMessage"
+                  name="message"
+                  rows="5"
+                  placeholder="Décrivez votre proposition ou votre demande..."
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary btn-lg contact-submit"
+              >
+                <i class="fas fa-paper-plane"></i> Envoyer le message
+              </button>
+            </form>
+          </div>
+
+          <!-- Panneau latéral -->
+          <div class="contact-sidebar">
+            <!-- Alerte alternance -->
+            <div class="contact-alert">
+              <div class="contact-alert-badge">
+                <i class="fas fa-search"></i> Recherche active
+              </div>
+              <h3>Alternance Bac+3</h3>
+              <p>Systèmes, Réseaux & Support</p>
+              <p class="contact-alert-date">
+                <i class="fas fa-calendar-alt"></i> Septembre 2026
+              </p>
+            </div>
+
+            <!-- Coordonnées directes -->
+            <div class="contact-direct">
+              <h4><i class="fas fa-address-book"></i> Coordonnées directes</h4>
+              <div class="contact-direct-list">
+                <a
+                  href="mailto:albisser.samy@gmail.com"
+                  class="contact-direct-item"
+                >
+                  <div class="contact-direct-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div>
+                    <span class="contact-direct-label">Email</span>
+                    <span class="contact-direct-value"
+                      >albisser.samy@gmail.com</span
+                    >
+                  </div>
+                </a>
+                <a href="tel:+33675802300" class="contact-direct-item">
+                  <div class="contact-direct-icon">
+                    <i class="fas fa-phone"></i>
+                  </div>
+                  <div>
+                    <span class="contact-direct-label">Téléphone</span>
+                    <span class="contact-direct-value">+33 6 75 80 23 00</span>
+                  </div>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/samy-albisser"
+                  target="_blank"
+                  class="contact-direct-item"
+                >
+                  <div class="contact-direct-icon">
+                    <i class="fab fa-linkedin"></i>
+                  </div>
+                  <div>
+                    <span class="contact-direct-label">LinkedIn</span>
+                    <span class="contact-direct-value">samy-albisser</span>
+                  </div>
+                </a>
+                <div class="contact-direct-item">
+                  <div class="contact-direct-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div>
+                    <span class="contact-direct-label">Localisation</span>
+                    <span class="contact-direct-value"
+                      >Lingolsheim, France</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Documents -->
+            <div class="contact-docs">
+              <h4><i class="fas fa-file-alt"></i> Mon CV</h4>
+              <div class="contact-docs-btns">
+                <button class="btn btn-outline open-cv-modal contact-doc-btn">
+                  <i class="fas fa-eye"></i> Prévisualiser
+                </button>
+                <a
+                  href="assets/Informations Samy ALBISSER/CV Albisser Samy 2026 2.pdf"
+                  target="_blank"
+                  class="btn btn-outline contact-doc-btn"
+                >
+                  <i class="fas fa-download"></i> Télécharger
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CV MODAL ==================== -->
+    <div
+      class="cv-modal-overlay"
+      id="cvModal"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Prévisualisation du CV"
+    >
+      <div class="cv-modal">
+        <div class="cv-modal-header">
+          <h3><i class="fas fa-file-pdf"></i> CV — Samy ALBISSER</h3>
+          <div class="cv-modal-actions">
+            <a
+              href="assets/Informations Samy ALBISSER/CV Albisser Samy 2026 2.pdf"
+              download
+              class="btn btn-primary btn-sm"
+            >
+              <i class="fas fa-download"></i> Télécharger
+            </a>
+            <button
+              class="cv-modal-close"
+              id="cvModalClose"
+              aria-label="Fermer"
+            >
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+        <div class="cv-modal-body">
+          <iframe id="cvIframe" title="Prévisualisation du CV"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <span class="logo-bracket">&lt;</span>Samy ALBISSER<span
+                class="logo-bracket"
+                >/&gt;</span
+              >
+            </div>
+            <p>Portfolio BTS SIO SISR<br />Promotion 2024-2026</p>
+            <div class="footer-links">
+              <a
+                href="https://www.linkedin.com/in/samy-albisser"
+                target="_blank"
+                title="LinkedIn"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="mailto:albisser.samy@gmail.com" title="Email"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-nav">
+            <h4>Parcours</h4>
+            <ul>
+              <li><a href="#about">À propos</a></li>
+              <li><a href="#formation">Formation</a></li>
+              <li><a href="#certifications">Certifications</a></li>
+              <li><a href="#experience">Expérience</a></li>
+              <li><a href="#competences">Compétences</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav">
+            <h4>Réalisations</h4>
+            <ul>
+              <li><a href="#projets">Ateliers Pro</a></li>
+              <li><a href="#procedures">Réalisations CARSAT</a></li>
+              <li><a href="#epreuve-e5">Épreuve E5</a></li>
+              <li><a href="#veille">Veille techno</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copy">© 2026 Samy ALBISSER — Tous droits réservés</p>
+          <p class="footer-tech">
+            Développé en HTML, CSS & JavaScript vanilla —
+            <a href="#hero">Retour en haut ↑</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
