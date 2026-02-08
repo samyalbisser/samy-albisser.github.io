@@ -489,6 +489,58 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // ===== LEGAL MODALS (Mentions légales & CGU) =====
+  function openLegalModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.classList.add("active");
+      document.body.style.overflow = "hidden";
+    }
+  }
+
+  function closeLegalModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.classList.remove("active");
+      document.body.style.overflow = "";
+    }
+  }
+
+  // Open modal links
+  document.querySelectorAll("[data-open-modal]").forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      openLegalModal(link.getAttribute("data-open-modal"));
+    });
+  });
+
+  // Close buttons
+  document.querySelectorAll("[data-close-modal]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      closeLegalModal(btn.getAttribute("data-close-modal"));
+    });
+  });
+
+  // Close on overlay click
+  document.querySelectorAll(".legal-modal-overlay").forEach((overlay) => {
+    overlay.addEventListener("click", (e) => {
+      if (e.target === overlay) {
+        closeLegalModal(overlay.id);
+      }
+    });
+  });
+
+  // Close on Escape key
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      document
+        .querySelectorAll(".legal-modal-overlay.active")
+        .forEach((modal) => {
+          closeLegalModal(modal.id);
+        });
+    }
+  });
+
   // ===== CONTACT FORM HANDLER =====
   const contactForm = document.getElementById("contactForm");
   if (contactForm) {
