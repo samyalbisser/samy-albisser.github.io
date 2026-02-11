@@ -2651,10 +2651,17 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
+  margin-bottom: 22px;
+}
+
+.form-row .form-group {
+  margin-bottom: 0;
 }
 
 .form-group {
-  margin-bottom: 18px;
+  position: relative;
+  margin-bottom: 22px;
+  padding-bottom: 0;
 }
 
 .form-group label {
@@ -2725,6 +2732,281 @@ img {
   font-size: 1rem;
   padding: 14px 28px;
   margin-top: 4px;
+}
+
+/* --- Toast notification --- */
+.form-toast {
+  position: relative;
+  margin-bottom: 0;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    max-height 0.4s ease,
+    opacity 0.4s ease,
+    margin 0.4s ease;
+}
+
+.form-toast.show {
+  max-height: 100px;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+
+.form-toast-inner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.form-toast-inner i {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.form-toast.success .form-toast-inner {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: #10b981;
+}
+
+.form-toast.error .form-toast-inner {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #ef4444;
+}
+
+/* --- Floating labels --- */
+.floating-label {
+  position: relative;
+}
+
+.floating-label label {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  pointer-events: none;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  background: transparent;
+  padding: 0 4px;
+  margin-bottom: 0;
+}
+
+.floating-label textarea ~ label {
+  top: 20px;
+}
+
+.floating-label select ~ label {
+  top: -10px;
+  left: 12px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-card);
+  padding: 0 6px;
+}
+
+.floating-label input:focus ~ label,
+.floating-label input:not(:placeholder-shown) ~ label,
+.floating-label textarea:focus ~ label,
+.floating-label textarea:not(:placeholder-shown) ~ label {
+  top: -10px;
+  left: 12px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--primary-light);
+  background: var(--bg-card);
+  padding: 0 6px;
+}
+
+.floating-label input:not(:focus):not(:placeholder-shown) ~ label,
+.floating-label textarea:not(:focus):not(:placeholder-shown) ~ label {
+  color: var(--text-secondary);
+}
+
+.floating-label input,
+.floating-label textarea {
+  padding: 16px 40px 16px 16px;
+}
+
+.floating-label select {
+  padding: 16px 40px 16px 16px;
+}
+
+/* --- Validation en temps réel --- */
+.form-validation-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.9rem;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.floating-label textarea ~ .form-validation-icon {
+  top: 20px;
+}
+
+.form-group.valid .form-validation-icon::before {
+  content: "\f058";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: #10b981;
+}
+
+.form-group.invalid .form-validation-icon::before {
+  content: "\f06a";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: #ef4444;
+}
+
+.form-group.valid .form-validation-icon,
+.form-group.invalid .form-validation-icon {
+  opacity: 1;
+}
+
+.form-group.valid input,
+.form-group.valid textarea,
+.form-group.valid select {
+  border-color: #10b981;
+}
+
+.form-group.valid input:focus,
+.form-group.valid textarea:focus,
+.form-group.valid select:focus {
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+}
+
+.form-group.invalid input,
+.form-group.invalid textarea,
+.form-group.invalid select {
+  border-color: #ef4444;
+}
+
+.form-group.invalid input:focus,
+.form-group.invalid textarea:focus,
+.form-group.invalid select:focus {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
+}
+
+.form-error {
+  display: block;
+  font-size: 0.74rem;
+  color: #ef4444;
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+}
+
+.form-group.invalid .form-error {
+  opacity: 1;
+}
+
+/* Floating label : ajustement validation pour le label flottant actif */
+.form-group.valid input:focus ~ label,
+.form-group.valid input:not(:placeholder-shown) ~ label,
+.form-group.valid textarea:focus ~ label,
+.form-group.valid textarea:not(:placeholder-shown) ~ label {
+  color: #10b981;
+}
+
+.form-group.invalid input:focus ~ label,
+.form-group.invalid input:not(:placeholder-shown) ~ label,
+.form-group.invalid textarea:focus ~ label,
+.form-group.invalid textarea:not(:placeholder-shown) ~ label {
+  color: #ef4444;
+}
+
+/* --- Checkbox RGPD --- */
+.form-rgpd {
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.form-rgpd .rgpd-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  position: relative;
+  line-height: 1.5;
+}
+
+.rgpd-label input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.rgpd-checkmark {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  border: 2px solid var(--border);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  margin-top: 1px;
+}
+
+.rgpd-checkmark i {
+  font-size: 0.6rem;
+  color: #fff;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.rgpd-label input:checked ~ .rgpd-checkmark {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.rgpd-label input:checked ~ .rgpd-checkmark i {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.rgpd-label input:focus ~ .rgpd-checkmark {
+  box-shadow: 0 0 0 3px var(--primary-glow);
+}
+
+.rgpd-text {
+  flex: 1;
+}
+
+.rgpd-text a {
+  color: var(--primary-light);
+  text-decoration: underline;
+}
+
+.form-rgpd .form-error {
+  position: static;
+  margin-left: 32px;
+  margin-top: 6px;
+}
+\n .form-rgpd.invalid .form-error {
+  opacity: 1;
 }
 
 /* --- Panneau latéral --- */
@@ -3633,8 +3915,20 @@ footer {
     gap: 0;
   }
 
+  .form-row .form-group {
+    margin-bottom: 22px;
+  }
+
+  .form-error {
+    white-space: normal;
+  }
+
   .contact-form-header h3 {
     font-size: 1.05rem;
+  }
+
+  .floating-label label {
+    font-size: 0.82rem;
   }
 
   .contact-alert {
@@ -5309,6 +5603,21 @@ footer {
 
 :root[data-theme="light"] a.contact-direct-item:hover {
   background: rgba(37, 99, 235, 0.04);
+}
+
+:root[data-theme="light"] .floating-label input:focus ~ label,
+:root[data-theme="light"] .floating-label input:not(:placeholder-shown) ~ label,
+:root[data-theme="light"] .floating-label textarea:focus ~ label,
+:root[data-theme="light"]
+  .floating-label
+  textarea:not(:placeholder-shown)
+  ~ label,
+:root[data-theme="light"] .floating-label select ~ label {
+  background: #fff;
+}
+
+:root[data-theme="light"] .rgpd-checkmark {
+  border-color: #d1d5db;
 }
 
 /* ===== PRINT ===== */

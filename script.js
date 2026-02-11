@@ -544,8 +544,143 @@ document.addEventListener("DOMContentLoaded", () => {
   // ===== CONTACT FORM HANDLER =====
   const contactForm = document.getElementById("contactForm");
   if (contactForm) {
+    const formToast = document.getElementById("formToast");
+
+    // --- Toast notification ---
+    function showToast(type, message) {
+      formToast.className = "form-toast " + type;
+      const icon =
+        type === "success"
+          ? "fas fa-check-circle"
+          : "fas fa-exclamation-circle";
+      formToast.innerHTML =
+        '<div class="form-toast-inner"><i class="' +
+        icon +
+        '"></i> ' +
+        message +
+        "</div>";
+      // Force reflow then show
+      void formToast.offsetHeight;
+      formToast.classList.add("show");
+      setTimeout(() => {
+        formToast.classList.remove("show");
+      }, 5000);
+    }
+
+    // --- Field validation ---
+    function validateField(field) {
+      const group = field.closest(".form-group");
+      if (!group) return true;
+
+      // Skip optional fields that are empty
+      if (!field.required && !field.value.trim()) {
+        group.classList.remove("valid", "invalid");
+        return true;
+      }
+
+      // Special: tel field with pattern
+      if (field.type === "tel" && field.value.trim()) {
+        const pattern = new RegExp(field.pattern);
+        if (!pattern.test(field.value.trim())) {
+          group.classList.remove("valid");
+          group.classList.add("invalid");
+          return false;
+        }
+        group.classList.remove("invalid");
+        group.classList.add("valid");
+        return true;
+      }
+
+      let isValid = field.checkValidity();
+
+      if (isValid && field.value.trim()) {
+        group.classList.remove("invalid");
+        group.classList.add("valid");
+      } else if (!isValid && (field.value || field.dataset.touched)) {
+        group.classList.remove("valid");
+        group.classList.add("invalid");
+      } else {
+        group.classList.remove("valid", "invalid");
+      }
+
+      return isValid;
+    }
+
+    // RGPD checkbox validation
+    function validateRgpd() {
+      const rgpd = document.getElementById("contactRgpd");
+      const group = rgpd.closest(".form-group");
+      if (rgpd.checked) {
+        group.classList.remove("invalid");
+        return true;
+      } else {
+        group.classList.add("invalid");
+        return false;
+      }
+    }
+
+    // Attach real-time validation to all fields
+    const formFields = contactForm.querySelectorAll(
+      "input:not([type=checkbox]):not([name=_gotcha]), select, textarea",
+    );
+
+    formFields.forEach((field) => {
+      field.addEventListener("blur", () => {
+        field.dataset.touched = "true";
+        validateField(field);
+      });
+      field.addEventListener("input", () => {
+        if (field.dataset.touched) {
+          validateField(field);
+        }
+      });
+    });
+
+    // Select validation on change
+    const subjectSelect = document.getElementById("contactSubject");
+    if (subjectSelect) {
+      subjectSelect.addEventListener("change", () => {
+        subjectSelect.dataset.touched = "true";
+        validateField(subjectSelect);
+      });
+    }
+
+    // RGPD real-time
+    const rgpdCheckbox = document.getElementById("contactRgpd");
+    if (rgpdCheckbox) {
+      rgpdCheckbox.addEventListener("change", validateRgpd);
+    }
+
+    // --- Form submit ---
     contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
+
+      // Honeypot check
+      const honeypot = contactForm.querySelector('input[name="_gotcha"]');
+      if (honeypot && honeypot.value) {
+        showToast("success", "Message envoyé avec succès !");
+        contactForm.reset();
+        return;
+      }
+
+      // Validate all fields
+      let allValid = true;
+      formFields.forEach((field) => {
+        field.dataset.touched = "true";
+        if (!validateField(field)) allValid = false;
+      });
+      if (!validateRgpd()) allValid = false;
+
+      if (!allValid) {
+        showToast("error", "Veuillez corriger les erreurs avant d'envoyer.");
+        // Focus first invalid field
+        const firstInvalid = contactForm.querySelector(
+          ".invalid input, .invalid select, .invalid textarea",
+        );
+        if (firstInvalid) firstInvalid.focus();
+        return;
+      }
+
       const submitBtn = contactForm.querySelector(".contact-submit");
       const originalText = submitBtn.innerHTML;
 
@@ -561,28 +696,29 @@ document.addEventListener("DOMContentLoaded", () => {
       })
         .then((response) => {
           if (response.ok) {
-            submitBtn.innerHTML =
-              '<i class="fas fa-check"></i> Message envoyé !';
-            submitBtn.style.background = "#10b981";
+            showToast(
+              "success",
+              "Message envoyé avec succès ! Je vous répondrai sous 24h.",
+            );
             contactForm.reset();
-            setTimeout(() => {
-              submitBtn.innerHTML = originalText;
-              submitBtn.style.background = "";
-              submitBtn.disabled = false;
-            }, 3000);
+            // Reset all validation states
+            contactForm
+              .querySelectorAll(".valid, .invalid")
+              .forEach((el) => el.classList.remove("valid", "invalid"));
+            formFields.forEach((f) => delete f.dataset.touched);
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
           } else {
             throw new Error("Erreur");
           }
         })
         .catch(() => {
-          submitBtn.innerHTML =
-            '<i class="fas fa-exclamation-triangle"></i> Erreur, réessayez';
-          submitBtn.style.background = "#ef4444";
-          setTimeout(() => {
-            submitBtn.innerHTML = originalText;
-            submitBtn.style.background = "";
-            submitBtn.disabled = false;
-          }, 3000);
+          showToast(
+            "error",
+            "Une erreur est survenue. Veuillez réessayer ou me contacter directement.",
+          );
+          submitBtn.innerHTML = originalText;
+          submitBtn.disabled = false;
         });
     });
   }

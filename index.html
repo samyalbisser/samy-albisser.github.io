@@ -3411,55 +3411,89 @@
                   <p>Je vous répondrai sous 24h</p>
                 </div>
               </div>
+              <!-- Toast notification -->
+              <div class="form-toast" id="formToast" aria-live="polite"></div>
+
               <form
                 class="contact-form"
                 id="contactForm"
                 action="https://formspree.io/f/mvzbzyan"
                 method="POST"
+                novalidate
               >
+                <!-- Honeypot anti-spam -->
+                <input
+                  type="text"
+                  name="_gotcha"
+                  style="display: none !important"
+                  tabindex="-1"
+                  autocomplete="off"
+                />
+
                 <div class="form-row">
-                  <div class="form-group">
-                    <label for="contactName"
-                      ><i class="fas fa-user"></i> Nom complet</label
-                    >
+                  <div class="form-group floating-label">
                     <input
                       type="text"
                       id="contactName"
                       name="name"
-                      placeholder="Jean Dupont"
+                      placeholder=" "
                       required
+                      minlength="2"
                     />
-                  </div>
-                  <div class="form-group">
-                    <label for="contactEmail"
-                      ><i class="fas fa-envelope"></i> Email
-                      professionnel</label
+                    <label for="contactName"
+                      ><i class="fas fa-user"></i> Nom complet</label
                     >
+                    <span class="form-validation-icon"></span>
+                    <span class="form-error">Veuillez entrer votre nom</span>
+                  </div>
+                  <div class="form-group floating-label">
                     <input
                       type="email"
                       id="contactEmail"
                       name="email"
-                      placeholder="jean.dupont@entreprise.fr"
+                      placeholder=" "
                       required
                     />
+                    <label for="contactEmail"
+                      ><i class="fas fa-envelope"></i> Email
+                      professionnel</label
+                    >
+                    <span class="form-validation-icon"></span>
+                    <span class="form-error"
+                      >Veuillez entrer un email valide</span
+                    >
                   </div>
                 </div>
-                <div class="form-group">
-                  <label for="contactCompany"
-                    ><i class="fas fa-building"></i> Entreprise
-                    <span class="form-optional">(optionnel)</span></label
-                  >
-                  <input
-                    type="text"
-                    id="contactCompany"
-                    name="company"
-                    placeholder="Nom de votre entreprise"
-                  />
+                <div class="form-row">
+                  <div class="form-group floating-label">
+                    <input
+                      type="text"
+                      id="contactCompany"
+                      name="company"
+                      placeholder=" "
+                    />
+                    <label for="contactCompany"
+                      ><i class="fas fa-building"></i> Entreprise
+                      <span class="form-optional">(optionnel)</span></label
+                    >
+                  </div>
+                  <div class="form-group floating-label">
+                    <input
+                      type="tel"
+                      id="contactPhone"
+                      name="phone"
+                      placeholder=" "
+                      pattern="[0-9+\s\-\.]{10,}"
+                    />
+                    <label for="contactPhone"
+                      ><i class="fas fa-phone"></i> Téléphone
+                      <span class="form-optional">(optionnel)</span></label
+                    >
+                    <span class="form-validation-icon"></span>
+                    <span class="form-error">Numéro invalide</span>
+                  </div>
                 </div>
-                <div class="form-group">
-                  <label for="contactSubject"
-                    ><i class="fas fa-tag"></i> Objet</label
-                  >
+                <div class="form-group floating-label">
                   <select id="contactSubject" name="subject" required>
                     <option value="" disabled selected>
                       Sélectionnez un sujet
@@ -3474,18 +3508,51 @@
                     </option>
                     <option value="autre">💬 Autre</option>
                   </select>
-                </div>
-                <div class="form-group">
-                  <label for="contactMessage"
-                    ><i class="fas fa-comment-dots"></i> Message</label
+                  <label for="contactSubject"
+                    ><i class="fas fa-tag"></i> Objet</label
                   >
+                  <span class="form-validation-icon"></span>
+                  <span class="form-error">Veuillez sélectionner un sujet</span>
+                </div>
+                <div class="form-group floating-label">
                   <textarea
                     id="contactMessage"
                     name="message"
                     rows="5"
-                    placeholder="Décrivez votre proposition ou votre demande..."
+                    placeholder=" "
                     required
+                    minlength="10"
                   ></textarea>
+                  <label for="contactMessage"
+                    ><i class="fas fa-comment-dots"></i> Message</label
+                  >
+                  <span class="form-validation-icon"></span>
+                  <span class="form-error"
+                    >Votre message doit contenir au moins 10 caractères</span
+                  >
+                </div>
+                <div class="form-group form-rgpd">
+                  <label class="rgpd-label">
+                    <input
+                      type="checkbox"
+                      id="contactRgpd"
+                      name="rgpd"
+                      required
+                    />
+                    <span class="rgpd-checkmark"
+                      ><i class="fas fa-check"></i
+                    ></span>
+                    <span class="rgpd-text">
+                      J'accepte que mes données soient traitées pour répondre à
+                      ma demande, conformément à la
+                      <a href="#" data-open-modal="mentionsModal"
+                        >politique de confidentialité</a
+                      >.
+                    </span>
+                  </label>
+                  <span class="form-error"
+                    >Vous devez accepter pour envoyer le message</span
+                  >
                 </div>
                 <button
                   type="submit"
@@ -3517,7 +3584,7 @@
                 </h4>
                 <div class="contact-direct-list">
                   <a
-                    href="mailto:albisser.samy@gmail.com"
+                    href="mailto:contact@samy-albisser.fr"
                     class="contact-direct-item"
                   >
                     <div class="contact-direct-icon">
@@ -3526,7 +3593,7 @@
                     <div>
                       <span class="contact-direct-label">Email</span>
                       <span class="contact-direct-value"
-                        >albisser.samy@gmail.com</span
+                        >contact@samy-albisser.fr</span
                       >
                     </div>
                   </a>
