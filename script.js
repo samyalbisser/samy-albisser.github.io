@@ -96,9 +96,9 @@ document.addEventListener("DOMContentLoaded", () => {
     "Passionné Systèmes & Réseaux",
   ];
   let titleIndex = 0;
-  let charIndex = 0;
-  let isDeleting = false;
-  let typingSpeed = 80;
+  let charIndex = titles[0].length; // Start from the end of the default text
+  let isDeleting = true; // Start by deleting the default text
+  let typingSpeed = 2000; // Pause before starting to delete
 
   function typeEffect() {
     const current = titles[titleIndex];
@@ -273,7 +273,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ".ap-card, .procedure-card, .competence-card, .veille-card, " +
       ".e5-description, .doc-card, .method-step, .veille-intro-text, " +
       ".veille-evolution, .learned-item, .career-goal, .career-option, .career-current, " +
-      ".e5-synthese, .cert-card, .tech-item, " +
+      ".e5-synthese, .link-card, .tech-item, " +
       ".testimonial-card, .why-me-item, .testimonial-note, " +
       ".contact-form-card, .contact-alert, .contact-direct, .contact-docs",
   );
