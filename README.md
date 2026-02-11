@@ -31,14 +31,14 @@ Ce site regroupe l'ensemble de mon parcours et de mes réalisations dans le cadr
 
 Le site est entièrement développé **from scratch**, sans framework ni dépendance :
 
-| Technologie            | Usage                                             |
-| ---------------------- | ------------------------------------------------- |
-| **HTML5**              | Structure sémantique, accessibilité, SEO          |
-| **CSS3**               | Design responsive, thème clair/sombre, animations |
-| **JavaScript vanilla** | Interactions, animations au scroll, formulaire    |
-| **GitHub Pages**       | Hébergement et déploiement                        |
-| **Cloudflare**         | DNS, CDN et analytics                             |
-| **Formspree**          | Gestion du formulaire de contact                  |
+| Technologie            | Usage                                                          |
+| ---------------------- | -------------------------------------------------------------- |
+| **HTML5**              | Structure sémantique, accessibilité, SEO                       |
+| **CSS3**               | Design responsive, thème clair/sombre, animations              |
+| **JavaScript vanilla** | Interactions, animations au scroll, formulaire                 |
+| **GitHub Pages**       | Hébergement et déploiement                                     |
+| **Cloudflare**         | DNS, CDN et analytics                                          |
+| **Formspree**          | Backend formulaire de contact (plan Free, 50 soumissions/mois) |
 
 Pas de React, pas de Vue, pas de bundler — juste les fondamentaux bien maîtrisés. 🙂
 
@@ -52,7 +52,7 @@ Pas de React, pas de Vue, pas de bundler — juste les fondamentaux bien maîtri
 - 📊 Compteurs animés et barres de compétences
 - 📂 Accordéons pour les ateliers professionnels avec livrables intégrés
 - 📄 Prévisualisation du CV en modal
-- 📬 Formulaire de contact fonctionnel
+- 📬 Formulaire de contact avancé (floating labels, validation temps réel, toast notifications, RGPD, honeypot anti-spam)
 - 🔍 SEO optimisé (meta, Open Graph, Twitter Cards, Schema.org JSON-LD)
 - ♿ Accessibilité (aria-labels, navigation clavier, sémantique HTML5)
 
@@ -91,7 +91,46 @@ Si vous avez une question, une opportunité ou simplement envie d'échanger :
 
 - 🌐 [samy-albisser.fr/#contact](https://samy-albisser.fr/#contact)
 - 💼 [LinkedIn](https://www.linkedin.com/in/samy-albisser/)
-- 📧 albisser.samy@gmail.com
+- 📧 contact@samy-albisser.fr
+
+---
+
+## 📝 Changelog
+
+### 11 février 2026 — Refonte du formulaire de contact
+
+**Mise en place de Formspree**
+
+- Configuration de [Formspree](https://formspree.io) (plan Free) pour l'envoi réel des messages du formulaire
+- Endpoint : `https://formspree.io/f/mvzbzyan`
+- Adresse de réception : `contact@samy-albisser.fr`
+
+**Améliorations UX/UI du formulaire**
+
+- ✨ **Floating labels** — Les labels sont positionnés à l'intérieur des champs au repos et flottent au-dessus avec une animation fluide au focus/saisie (style Material Design)
+- ✅ **Validation en temps réel** — Bordure verte + icône ✅ quand un champ est valide, bordure rouge + icône ⚠️ + message d'erreur quand invalide (déclenchée au `blur`, puis en continu à chaque frappe)
+- 🎉 **Toast notifications** — Bandeau animé vert (succès) ou rouge (erreur) affiché au-dessus du formulaire pendant 5 secondes, remplaçant le simple changement de texte du bouton
+- 📱 **Champ Téléphone** — Nouveau champ optionnel avec validation du format
+- 🔒 **Checkbox RGPD** — Case à cocher obligatoire avec checkbox custom animé et lien vers les mentions légales
+- 🤖 **Honeypot anti-spam** — Champ caché invisible (`_gotcha`) : si un bot le remplit, le formulaire simule un succès sans envoyer
+
+**Améliorations des emails reçus**
+
+- Labels des champs en français dans l'email (Nom, Email, Entreprise, Téléphone, Objet, Message)
+- Objet personnalisé : "📩 Nouveau message depuis samy-albisser.fr"
+- Valeurs lisibles pour le select Objet ("Proposition d'alternance Bac+3" au lieu de "alternance")
+- Suppression du champ RGPD dans l'email ("rgpd: on" inutile)
+- `_replyto` dynamique pour répondre directement à l'expéditeur depuis l'email
+
+**Responsive**
+
+- Formulaire adapté mobile : champs empilés en colonne avec espacement correct
+- Messages d'erreur en `position: absolute` pour ne jamais décaler le layout
+- Retour à la ligne autorisé sur les messages d'erreur en petit écran
+
+**Autre**
+
+- Email de contact mis à jour : `contact@samy-albisser.fr` (panneau latéral + README)
 
 ---
 
