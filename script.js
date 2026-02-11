@@ -689,9 +689,14 @@ document.addEventListener("DOMContentLoaded", () => {
         '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
       submitBtn.disabled = true;
 
+      // Build FormData with _replyto for direct reply
+      const formData = new FormData(contactForm);
+      const emailValue = document.getElementById("contactEmail").value;
+      formData.append("_replyto", emailValue);
+
       fetch(contactForm.action, {
         method: "POST",
-        body: new FormData(contactForm),
+        body: formData,
         headers: { Accept: "application/json" },
       })
         .then((response) => {

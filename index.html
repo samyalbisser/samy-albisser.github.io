@@ -3429,13 +3429,19 @@
                   tabindex="-1"
                   autocomplete="off"
                 />
+                <!-- Formspree : objet du mail reçu -->
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="📩 Nouveau message depuis samy-albisser.fr"
+                />
 
                 <div class="form-row">
                   <div class="form-group floating-label">
                     <input
                       type="text"
                       id="contactName"
-                      name="name"
+                      name="Nom"
                       placeholder=" "
                       required
                       minlength="2"
@@ -3450,7 +3456,7 @@
                     <input
                       type="email"
                       id="contactEmail"
-                      name="email"
+                      name="Email"
                       placeholder=" "
                       required
                     />
@@ -3469,7 +3475,7 @@
                     <input
                       type="text"
                       id="contactCompany"
-                      name="company"
+                      name="Entreprise"
                       placeholder=" "
                     />
                     <label for="contactCompany"
@@ -3481,7 +3487,7 @@
                     <input
                       type="tel"
                       id="contactPhone"
-                      name="phone"
+                      name="Téléphone"
                       placeholder=" "
                       pattern="[0-9+\s\-\.]{10,}"
                     />
@@ -3494,19 +3500,21 @@
                   </div>
                 </div>
                 <div class="form-group floating-label">
-                  <select id="contactSubject" name="subject" required>
+                  <select id="contactSubject" name="Objet" required>
                     <option value="" disabled selected>
                       Sélectionnez un sujet
                     </option>
-                    <option value="alternance">
+                    <option value="Proposition d'alternance Bac+3">
                       💼 Proposition d'alternance Bac+3
                     </option>
-                    <option value="stage">📋 Proposition de stage</option>
-                    <option value="emploi">🏢 Offre d'emploi</option>
-                    <option value="information">
+                    <option value="Proposition de stage">
+                      📋 Proposition de stage
+                    </option>
+                    <option value="Offre d'emploi">🏢 Offre d'emploi</option>
+                    <option value="Demande d'information">
                       ℹ️ Demande d'information
                     </option>
-                    <option value="autre">💬 Autre</option>
+                    <option value="Autre">💬 Autre</option>
                   </select>
                   <label for="contactSubject"
                     ><i class="fas fa-tag"></i> Objet</label
@@ -3517,7 +3525,7 @@
                 <div class="form-group floating-label">
                   <textarea
                     id="contactMessage"
-                    name="message"
+                    name="Message"
                     rows="5"
                     placeholder=" "
                     required
@@ -3533,12 +3541,7 @@
                 </div>
                 <div class="form-group form-rgpd">
                   <label class="rgpd-label">
-                    <input
-                      type="checkbox"
-                      id="contactRgpd"
-                      name="rgpd"
-                      required
-                    />
+                    <input type="checkbox" id="contactRgpd" required />
                     <span class="rgpd-checkmark"
                       ><i class="fas fa-check"></i
                     ></span>
