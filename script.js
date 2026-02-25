@@ -47,8 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // ===== CV MODAL =====
   const cvModal = document.getElementById("cvModal");
   const cvIframe = document.getElementById("cvIframe");
-  const cvPath =
-    "assets/Informations%20Samy%20ALBISSER/CV%20Albisser%20Samy%202026%202.pdf";
+  const cvPath = "assets/Informations_Samy_ALBISSER/CV_Albisser_Samy.pdf";
 
   function openCvModal() {
     cvIframe.src = cvPath;

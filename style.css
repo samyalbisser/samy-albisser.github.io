@@ -796,6 +796,17 @@ img {
   font-size: 0.8rem;
 }
 
+/* Fiche de poste */
+.exp-fiche-poste {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.exp-fiche-poste .btn {
+  font-size: 0.9rem;
+}
+
 /* ===== COMPÉTENCES ===== */
 .skills-grid {
   display: grid;
