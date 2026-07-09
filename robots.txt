@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://samy-albisser.fr/sitemap.xml
+
+# Block assets that shouldn't be indexed
+Disallow: /assets/Informations*
+Disallow: /assets/Alternance*
+Disallow: /README.md
