@@ -1,0 +1,14 @@
+Wayback Machine Exclusion Request - Domain Ownership Verification
+
+Domain: samy-albisser.fr
+Registrant: Samy Albisser
+Contact email: albisser.samy@gmail.com
+Domain registrar: OVH
+Domain registered: February 8, 2026
+Internet Archive support ticket: #1580848
+
+I confirm ownership and control of the domain samy-albisser.fr and
+request the exclusion of this entire domain from the Wayback Machine
+for the period of February 8, 2026 to present (indefinite).
+
+Date of this verification file: July 17, 2026
